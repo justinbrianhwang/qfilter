@@ -31,8 +31,8 @@ learning models. Built on [PennyLane](https://pennylane.ai/).
 ## Installation
 
 ```bash
-git clone https://github.com/<you>/quantum-filter-zoo.git
-cd quantum-filter-zoo
+git clone https://github.com/justinbrianhwang/qfilter.git
+cd qfilter
 
 # (recommended) create a conda environment
 conda env create -f environment.yml
