@@ -1,5 +1,8 @@
 # Quantum Filter Zoo (qfz)
 
+<img width="1376" height="768" alt="A-clean,-modern-technical-illustration-for-a-machine-learning-open-sour…-image-1" src="https://github.com/user-attachments/assets/a17375b9-c4d4-4860-8b28-78a118b8cba1" />
+
+
 A PyTorch library of **quantum filter layers** that plug into classical deep
 learning models. Built on [PennyLane](https://pennylane.ai/).
 
