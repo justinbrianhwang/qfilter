@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.ruff_cache/
+
+# Data (use $QFZ_DATA_ROOT or ./data; never commit datasets)
+data/
+
+# Environments
+.venv/
+venv/
+
+# Editors / OS
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
