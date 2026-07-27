@@ -1,0 +1,32 @@
+{
+  "config": {
+    "dataset": "svhn",
+    "model": "rff",
+    "epochs": 3,
+    "batch_size": 64,
+    "train_size": 2000,
+    "test_size": 1000,
+    "lr": 0.001,
+    "seed": 50,
+    "device": "cpu",
+    "environment": {
+      "python": "3.11.15",
+      "torch": "2.12.0+cpu",
+      "pennylane": "0.45.0",
+      "git_commit": "af58583"
+    }
+  },
+  "metrics": {
+    "test_accuracy": 0.211,
+    "parameters": {
+      "trainable": 30730,
+      "total": 30730
+    },
+    "train_time_s": 0.907678500021575,
+    "inference": {
+      "ms_per_batch": 1.7042400024365634,
+      "ms_per_image": 0.026628750038071303,
+      "batch_size": 64
+    }
+  }
+}

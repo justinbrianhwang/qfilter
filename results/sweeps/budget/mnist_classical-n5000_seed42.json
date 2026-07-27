@@ -1,0 +1,33 @@
+{
+  "config": {
+    "dataset": "mnist",
+    "model": "classical",
+    "epochs": 3,
+    "batch_size": 64,
+    "train_size": 5000,
+    "test_size": 1000,
+    "lr": 0.001,
+    "seed": 42,
+    "device": "cpu",
+    "environment": {
+      "python": "3.11.15",
+      "torch": "2.12.0+cpu",
+      "pennylane": "0.45.0",
+      "git_commit": "af58583"
+    },
+    "variant": "classical-n5000"
+  },
+  "metrics": {
+    "test_accuracy": 0.871,
+    "parameters": {
+      "trainable": 7870,
+      "total": 7870
+    },
+    "train_time_s": 3.2978777999815065,
+    "inference": {
+      "ms_per_batch": 0.41600000695325434,
+      "ms_per_image": 0.006500000108644599,
+      "batch_size": 64
+    }
+  }
+}

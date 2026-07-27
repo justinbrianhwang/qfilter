@@ -29,11 +29,14 @@ learning models. Built on [PennyLane](https://pennylane.ai/).
   torch dataset can be registered and used with the same benchmark tooling.
 - **Multi-seed benchmark grid** (`run_all`) reporting accuracy (mean ± std
   over seeds), parameter count, training time, and inference time against
-  two architecture-matched classical baselines: a *trained* CNN and a
-  *frozen random* CNN (the fair control for fixed quantum filters).
+  three architecture-matched classical baselines: a *trained* CNN, a
+  *frozen random* CNN, and a *frozen spectrum-matched random Fourier
+  feature* filter (`RFFFilter2D`) — the controls the dequantization
+  literature prescribes for fixed quantum filters.
 - **Ablation grids** (`ablations`) over every swappable axis: entanglement
   pattern, encoding, circuit block, trainable vs. frozen angles, and
-  per-channel vs. stacked multi-channel mode.
+  per-channel vs. stacked multi-channel mode — plus **budget sweeps**
+  (`sweeps`) over epochs and training-set size.
 
 ## Installation
 
@@ -133,23 +136,29 @@ Data is stored under `$QFZ_DATA_ROOT` if that environment variable is set
 # single run
 python -m qfz.benchmarks.train --dataset mnist --model quanv --epochs 3
 
-# full grid: 4 datasets x {classical, randconv, quanv, qpf, pqc} x 10 seeds
+# full grid: 4 datasets x {classical, randconv, rff, quanv, qpf, pqc} x 10 seeds
 python -m qfz.benchmarks.run_all --datasets mnist fashionmnist cifar10 svhn \
     --seeds 42 43 44 45 46 47 48 49 50 51 --out results/multiseed
 
 # ablations over entanglement / encoding / circuit / trainability / mode
 python -m qfz.benchmarks.ablations --out results/ablations
 
+# sensitivity sweeps over epochs and training-set size
+python -m qfz.benchmarks.sweeps --sweep epochs
+python -m qfz.benchmarks.sweeps --sweep budget
+
 # print the aggregated comparison table (mean ± std over seeds)
 python -m qfz.benchmarks.evaluate --results results/multiseed
 ```
 
-Each run saves a self-describing JSON (config + metrics); runs are
-resumable and aggregated per (dataset, model) across seeds. Two classical
-baselines mirror the hybrid architecture exactly (same geometry conv +
-Tanh + identical linear head): `classical` (trained conv) and `randconv`
-(*frozen random* conv — the fair control for the fixed quantum filters,
-which are themselves fixed random feature extractors).
+Each run saves a self-describing JSON (config + metrics + library
+versions + code revision); runs are resumable and aggregated per
+(dataset, model) across seeds. Three classical baselines mirror the
+hybrid architecture exactly (same patch geometry + identical linear
+head): `classical` (trained conv + Tanh), `randconv` (the same conv
+*frozen* at random initialization), and `rff` (frozen random Fourier
+features drawn from the quantum filters' own frequency spectrum
+{-1,0,1}^k² — the dequantization-aware control).
 
 ### Results
 
@@ -158,25 +167,33 @@ which are themselves fixed random feature extractors).
 filters use 4 qubits (per-channel mode on RGB). These are small-subset,
 low-data-regime benchmarks, **not** evidence of quantum advantage.
 
-| dataset | classical | randconv (frozen) | quanv | qpf | pqc |
-|---|---|---|---|---|---|
-| mnist | .803 ± .019 | .763 ± .028 | **.827 ± .019** | .816 ± .020 | .736 ± .050 |
-| fashionmnist | .726 ± .014 | .706 ± .020 | .747 ± .015 | **.767 ± .015** | .718 ± .023 |
-| cifar10 | .327 ± .015 | .298 ± .026 | **.336 ± .027** | .335 ± .018 | .324 ± .026 |
-| svhn | .188 ± .019 | .173 ± .025 | .198 ± .014 | .204 ± .026 | **.208 ± .017** |
+| dataset | classical | randconv (frozen) | rff (frozen) | quanv | qpf | pqc |
+|---|---|---|---|---|---|---|
+| mnist | .803 ± .019 | .763 ± .028 | .788 ± .037 | **.827 ± .019** | .816 ± .020 | .736 ± .050 |
+| fashionmnist | .726 ± .014 | .706 ± .020 | .739 ± .035 | .747 ± .015 | **.767 ± .015** | .718 ± .023 |
+| cifar10 | .327 ± .015 | .298 ± .026 | .312 ± .034 | **.336 ± .027** | .335 ± .018 | .324 ± .026 |
+| svhn | .188 ± .019 | .173 ± .025 | .195 ± .029 | .198 ± .014 | .204 ± .026 | **.208 ± .017** |
 
-Observations on these subsets (Welch t-tests over 10 seeds):
+Observations on these subsets (Welch t-tests over 10 seeds, Holm-corrected
+per model across the four datasets; paired tests agree):
 
 - The fixed quantum filters (`quanv`, `qpf`) outperform the **frozen random
-  classical conv** of identical geometry on all four datasets
-  (p < 0.02 everywhere) — i.e., they are not interchangeable with this
-  classical random-feature control at matched architecture.
+  conv** of identical geometry on all four datasets (Holm-corrected
+  p ≤ 0.017, Cohen's d 1.2-3.5) — but against the **spectrum-matched RFF
+  control** the point estimates stay positive while most comparisons lose
+  significance. The naive frozen control overstates how distinctive the
+  quantum feature maps are; the dequantization-aware control absorbs most
+  of the gap.
 - Against the *trained* classical conv they win on the grayscale datasets
-  (e.g. qpf on fashionmnist: +4.1 pts, p < 0.001) and are on par on RGB.
-- Training the circuit angles gives no benefit at this scale: `pqc` never
-  beats the fixed filters, and trainable-vs-frozen ablations are
-  statistically indistinguishable.
+  (e.g. qpf on fashionmnist: +4.1 pts, Holm p < 0.001) and are on par on RGB.
+- Training the circuit angles moves accuracy by at most +0.4 pts
+  (paired 95% CIs; nothing detectable on RGB), and `pqc` never
+  significantly exceeds the fixed filters.
 - Inference under simulation remains 10-100x slower than the classical conv.
+- Budget sweeps (epochs 3→30, train size 500→5,000; `results/sweeps/`) show
+  the edge over the *trained* conv is a low-budget effect — it disappears
+  once the classical model is given 30 epochs or 5,000 images — while the
+  ordering above the frozen controls is stable across both axes.
 
 Raw records: [results/multiseed/](results/multiseed/) and
 [results/ablations/](results/ablations/), chart:
@@ -200,7 +217,7 @@ qfz/
 ├── circuits/    # random, hardware-efficient, IQP circuit blocks (registry)
 ├── models/      # HybridCNN wrapper + matched ClassicalCNN baseline
 ├── datasets/    # dataset registry: mnist/fashionmnist/cifar10/svhn + custom
-├── benchmarks/  # train / evaluate / metrics / run_all / ablations
+├── benchmarks/  # train / evaluate / metrics / run_all / ablations / sweeps
 └── utils/       # seeding, visualization
 ```
 
@@ -221,6 +238,13 @@ init, shuffling, subsampling).
 - Riaz et al., *Application of Quantum Pre-Processing Filter for Binary
   Image Classification with Small Samples*,
   [arXiv:2308.14930](https://arxiv.org/abs/2308.14930) (2023).
+- Schuld et al., *Effect of Data Encoding on the Expressive Power of
+  Variational Quantum Machine Learning Models*,
+  [arXiv:2008.08605](https://arxiv.org/abs/2008.08605) (2021), and
+  Landman et al., *Classically Approximating Variational Quantum Machine
+  Learning with Random Fourier Features*,
+  [arXiv:2210.13200](https://arxiv.org/abs/2210.13200) (ICLR 2023) — the
+  basis for the spectrum-matched `RFFFilter2D` control.
 - PennyLane demo: [Quanvolutional Neural Networks](https://pennylane.ai/qml/demos/tutorial_quanvolution).
 
 ## License

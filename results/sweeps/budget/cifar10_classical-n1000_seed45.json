@@ -1,0 +1,33 @@
+{
+  "config": {
+    "dataset": "cifar10",
+    "model": "classical",
+    "epochs": 3,
+    "batch_size": 64,
+    "train_size": 1000,
+    "test_size": 1000,
+    "lr": 0.001,
+    "seed": 45,
+    "device": "cpu",
+    "environment": {
+      "python": "3.11.15",
+      "torch": "2.12.0+cpu",
+      "pennylane": "0.45.0",
+      "git_commit": "af58583"
+    },
+    "variant": "classical-n1000"
+  },
+  "metrics": {
+    "test_accuracy": 0.324,
+    "parameters": {
+      "trainable": 30886,
+      "total": 30886
+    },
+    "train_time_s": 0.22423749999143183,
+    "inference": {
+      "ms_per_batch": 0.3493799886200577,
+      "ms_per_image": 0.005459062322188402,
+      "batch_size": 64
+    }
+  }
+}

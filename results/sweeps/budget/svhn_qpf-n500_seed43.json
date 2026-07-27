@@ -1,0 +1,33 @@
+{
+  "config": {
+    "dataset": "svhn",
+    "model": "qpf",
+    "epochs": 3,
+    "batch_size": 64,
+    "train_size": 500,
+    "test_size": 1000,
+    "lr": 0.001,
+    "seed": 43,
+    "device": "cpu",
+    "environment": {
+      "python": "3.11.15",
+      "torch": "2.12.0+cpu",
+      "pennylane": "0.45.0",
+      "git_commit": "af58583"
+    },
+    "variant": "qpf-n500"
+  },
+  "metrics": {
+    "test_accuracy": 0.19,
+    "parameters": {
+      "trainable": 30730,
+      "total": 30730
+    },
+    "train_time_s": 2.4547806000045966,
+    "inference": {
+      "ms_per_batch": 102.14968000072986,
+      "ms_per_image": 1.596088750011404,
+      "batch_size": 64
+    }
+  }
+}

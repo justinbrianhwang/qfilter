@@ -1,0 +1,33 @@
+{
+  "config": {
+    "dataset": "fashionmnist",
+    "model": "rff",
+    "epochs": 3,
+    "batch_size": 64,
+    "train_size": 500,
+    "test_size": 1000,
+    "lr": 0.001,
+    "seed": 45,
+    "device": "cpu",
+    "environment": {
+      "python": "3.11.15",
+      "torch": "2.12.0+cpu",
+      "pennylane": "0.45.0",
+      "git_commit": "af58583"
+    },
+    "variant": "rff-n500"
+  },
+  "metrics": {
+    "test_accuracy": 0.55,
+    "parameters": {
+      "trainable": 7850,
+      "total": 7850
+    },
+    "train_time_s": 0.1167651999858208,
+    "inference": {
+      "ms_per_batch": 0.976359995547682,
+      "ms_per_image": 0.015255624930432532,
+      "batch_size": 64
+    }
+  }
+}

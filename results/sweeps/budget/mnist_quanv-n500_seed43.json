@@ -1,0 +1,33 @@
+{
+  "config": {
+    "dataset": "mnist",
+    "model": "quanv",
+    "epochs": 3,
+    "batch_size": 64,
+    "train_size": 500,
+    "test_size": 1000,
+    "lr": 0.001,
+    "seed": 43,
+    "device": "cpu",
+    "environment": {
+      "python": "3.11.15",
+      "torch": "2.12.0+cpu",
+      "pennylane": "0.45.0",
+      "git_commit": "af58583"
+    },
+    "variant": "quanv-n500"
+  },
+  "metrics": {
+    "test_accuracy": 0.665,
+    "parameters": {
+      "trainable": 7850,
+      "total": 7850
+    },
+    "train_time_s": 1.0288933000119869,
+    "inference": {
+      "ms_per_batch": 36.915400001453236,
+      "ms_per_image": 0.5768031250227068,
+      "batch_size": 64
+    }
+  }
+}

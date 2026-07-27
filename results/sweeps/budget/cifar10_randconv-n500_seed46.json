@@ -1,0 +1,33 @@
+{
+  "config": {
+    "dataset": "cifar10",
+    "model": "randconv",
+    "epochs": 3,
+    "batch_size": 64,
+    "train_size": 500,
+    "test_size": 1000,
+    "lr": 0.001,
+    "seed": 46,
+    "device": "cpu",
+    "environment": {
+      "python": "3.11.15",
+      "torch": "2.12.0+cpu",
+      "pennylane": "0.45.0",
+      "git_commit": "af58583"
+    },
+    "variant": "randconv-n500"
+  },
+  "metrics": {
+    "test_accuracy": 0.305,
+    "parameters": {
+      "trainable": 30730,
+      "total": 30886
+    },
+    "train_time_s": 0.13631150001310743,
+    "inference": {
+      "ms_per_batch": 0.19792001112364233,
+      "ms_per_image": 0.0030925001738069113,
+      "batch_size": 64
+    }
+  }
+}

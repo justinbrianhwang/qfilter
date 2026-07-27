@@ -1,0 +1,33 @@
+{
+  "config": {
+    "dataset": "cifar10",
+    "model": "rff",
+    "epochs": 3,
+    "batch_size": 64,
+    "train_size": 5000,
+    "test_size": 1000,
+    "lr": 0.001,
+    "seed": 46,
+    "device": "cpu",
+    "environment": {
+      "python": "3.11.15",
+      "torch": "2.12.0+cpu",
+      "pennylane": "0.45.0",
+      "git_commit": "af58583"
+    },
+    "variant": "rff-n5000"
+  },
+  "metrics": {
+    "test_accuracy": 0.361,
+    "parameters": {
+      "trainable": 30730,
+      "total": 30730
+    },
+    "train_time_s": 2.066766500007361,
+    "inference": {
+      "ms_per_batch": 3.007640002761036,
+      "ms_per_image": 0.04699437504314119,
+      "batch_size": 64
+    }
+  }
+}

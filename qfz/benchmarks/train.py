@@ -9,6 +9,8 @@ Models:
     classical  Trainable Conv2d baseline, architecture-matched to the hybrids.
     randconv   Frozen random Conv2d + Tanh: the classical control for the
                fixed quantum filters (random fixed nonlinear features).
+    rff        Frozen spectrum-matched random Fourier feature filter: the
+               dequantization-aware classical control (same patch geometry).
     quanv      Fixed random quanvolution filter + linear head.
     qpf        Fixed quantum preprocessing filter + linear head.
     pqc        Trainable parameterized quantum convolution + linear head.
@@ -29,11 +31,34 @@ from tqdm import tqdm
 
 from qfz.benchmarks.metrics import count_parameters, evaluate_accuracy, measure_inference_time
 from qfz.datasets import get_dataloaders
-from qfz.layers import PQCConv2D, QPF, Quanvolution2D
+from qfz.layers import PQCConv2D, QPF, Quanvolution2D, RFFFilter2D
 from qfz.models import ClassicalCNN, HybridCNN
 from qfz.utils import set_seed
 
-MODELS = ("classical", "randconv", "quanv", "qpf", "pqc")
+
+def environment_info() -> dict:
+    """Software versions and code revision, recorded with every run."""
+    import platform
+    import subprocess
+
+    import pennylane
+
+    try:
+        commit = subprocess.run(
+            ["git", "rev-parse", "--short", "HEAD"],
+            capture_output=True, text=True, timeout=5,
+            cwd=Path(__file__).resolve().parent,
+        ).stdout.strip() or None
+    except Exception:
+        commit = None
+    return {
+        "python": platform.python_version(),
+        "torch": torch.__version__,
+        "pennylane": pennylane.__version__,
+        "git_commit": commit,
+    }
+
+MODELS = ("classical", "randconv", "rff", "quanv", "qpf", "pqc")
 
 
 def build_model(name: str, info, seed: int = 42, layer_kwargs: dict = None) -> nn.Module:
@@ -67,7 +92,11 @@ def build_model(name: str, info, seed: int = 42, layer_kwargs: dict = None) -> n
             for p in model.features.parameters():
                 p.requires_grad_(False)
         return model
-    if name == "quanv":
+    if name == "rff":
+        kwargs = dict(per_channel=per_channel, seed=seed)
+        kwargs.update(overrides)
+        layer = RFFFilter2D(channels, out_channels, **kwargs)
+    elif name == "quanv":
         kwargs = dict(per_channel=per_channel, seed=seed)
         kwargs.update(overrides)
         layer = Quanvolution2D(channels, out_channels, **kwargs)
@@ -133,6 +162,7 @@ def run_experiment(dataset: str, model_name: str, epochs: int = 3,
         "dataset": dataset, "model": model_name, "epochs": epochs,
         "batch_size": batch_size, "train_size": train_size,
         "test_size": test_size, "lr": lr, "seed": seed, "device": device,
+        "environment": environment_info(),
     }
     if layer_kwargs:
         config["layer_kwargs"] = layer_kwargs

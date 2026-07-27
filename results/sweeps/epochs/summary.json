@@ -1,0 +1,4952 @@
+[
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "classical",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 42,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "classical-ep3"
+    },
+    "metrics": {
+      "test_accuracy": 0.807,
+      "parameters": {
+        "trainable": 7870,
+        "total": 7870
+      },
+      "train_time_s": 0.5036856000078842,
+      "inference": {
+        "ms_per_batch": 0.25536001194268465,
+        "ms_per_image": 0.003990000186604448,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "classical",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 43,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "classical-ep3"
+    },
+    "metrics": {
+      "test_accuracy": 0.761,
+      "parameters": {
+        "trainable": 7870,
+        "total": 7870
+      },
+      "train_time_s": 0.4972888000193052,
+      "inference": {
+        "ms_per_batch": 0.1853400084655732,
+        "ms_per_image": 0.002895937632274581,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "classical",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 44,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "classical-ep3"
+    },
+    "metrics": {
+      "test_accuracy": 0.809,
+      "parameters": {
+        "trainable": 7870,
+        "total": 7870
+      },
+      "train_time_s": 0.47624180000275373,
+      "inference": {
+        "ms_per_batch": 0.19771999795921147,
+        "ms_per_image": 0.003089374968112679,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "classical",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 45,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "classical-ep3"
+    },
+    "metrics": {
+      "test_accuracy": 0.788,
+      "parameters": {
+        "trainable": 7870,
+        "total": 7870
+      },
+      "train_time_s": 0.4855878999806009,
+      "inference": {
+        "ms_per_batch": 0.2579999971203506,
+        "ms_per_image": 0.004031249955005478,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "classical",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 46,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "classical-ep3"
+    },
+    "metrics": {
+      "test_accuracy": 0.801,
+      "parameters": {
+        "trainable": 7870,
+        "total": 7870
+      },
+      "train_time_s": 0.5020207999914419,
+      "inference": {
+        "ms_per_batch": 0.23708000662736595,
+        "ms_per_image": 0.003704375103552593,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "randconv",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 42,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "randconv-ep3"
+    },
+    "metrics": {
+      "test_accuracy": 0.764,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7870
+      },
+      "train_time_s": 0.46806899999501184,
+      "inference": {
+        "ms_per_batch": 0.16654000501148403,
+        "ms_per_image": 0.002602187578304438,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "randconv",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 43,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "randconv-ep3"
+    },
+    "metrics": {
+      "test_accuracy": 0.704,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7870
+      },
+      "train_time_s": 0.43788100001984276,
+      "inference": {
+        "ms_per_batch": 0.2361200109589845,
+        "ms_per_image": 0.0036893751712341327,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "randconv",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 44,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "randconv-ep3"
+    },
+    "metrics": {
+      "test_accuracy": 0.761,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7870
+      },
+      "train_time_s": 0.40241559999412857,
+      "inference": {
+        "ms_per_batch": 0.206540001090616,
+        "ms_per_image": 0.003227187517040875,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "randconv",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 45,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "randconv-ep3"
+    },
+    "metrics": {
+      "test_accuracy": 0.764,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7870
+      },
+      "train_time_s": 0.443160099996021,
+      "inference": {
+        "ms_per_batch": 0.26328000240027905,
+        "ms_per_image": 0.00411375003750436,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "randconv",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 46,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "randconv-ep3"
+    },
+    "metrics": {
+      "test_accuracy": 0.753,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7870
+      },
+      "train_time_s": 0.4626239000062924,
+      "inference": {
+        "ms_per_batch": 0.15899999416433275,
+        "ms_per_image": 0.002484374908817699,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "rff",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 42,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "rff-ep3"
+    },
+    "metrics": {
+      "test_accuracy": 0.801,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 0.5194600000104401,
+      "inference": {
+        "ms_per_batch": 0.6599999964237213,
+        "ms_per_image": 0.010312499944120646,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "rff",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 43,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "rff-ep3"
+    },
+    "metrics": {
+      "test_accuracy": 0.829,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 0.45478889998048544,
+      "inference": {
+        "ms_per_batch": 0.9996799984946848,
+        "ms_per_image": 0.01561999997647945,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "rff",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 44,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "rff-ep3"
+    },
+    "metrics": {
+      "test_accuracy": 0.731,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 0.48013030001311563,
+      "inference": {
+        "ms_per_batch": 0.6192800006829202,
+        "ms_per_image": 0.009676250010670628,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "rff",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 45,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "rff-ep3"
+    },
+    "metrics": {
+      "test_accuracy": 0.796,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 0.46703480000724085,
+      "inference": {
+        "ms_per_batch": 0.6691200076602399,
+        "ms_per_image": 0.010455000119691249,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "rff",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 46,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "rff-ep3"
+    },
+    "metrics": {
+      "test_accuracy": 0.784,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 0.5248148000100628,
+      "inference": {
+        "ms_per_batch": 0.6829399964772165,
+        "ms_per_image": 0.010670937444956508,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "quanv",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 42,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "quanv-ep3"
+    },
+    "metrics": {
+      "test_accuracy": 0.783,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 4.660544399986975,
+      "inference": {
+        "ms_per_batch": 44.88051999360323,
+        "ms_per_image": 0.7012581249000505,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "quanv",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 43,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "quanv-ep3"
+    },
+    "metrics": {
+      "test_accuracy": 0.813,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 3.8960389999847393,
+      "inference": {
+        "ms_per_batch": 30.90646000346169,
+        "ms_per_image": 0.4829134375540889,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "quanv",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 44,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "quanv-ep3"
+    },
+    "metrics": {
+      "test_accuracy": 0.835,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 4.314183199981926,
+      "inference": {
+        "ms_per_batch": 39.946940005756915,
+        "ms_per_image": 0.6241709375899518,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "quanv",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 45,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "quanv-ep3"
+    },
+    "metrics": {
+      "test_accuracy": 0.843,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 4.22327819999191,
+      "inference": {
+        "ms_per_batch": 37.89609999512322,
+        "ms_per_image": 0.5921265624238004,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "quanv",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 46,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "quanv-ep3"
+    },
+    "metrics": {
+      "test_accuracy": 0.84,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 4.288476499990793,
+      "inference": {
+        "ms_per_batch": 39.719439996406436,
+        "ms_per_image": 0.6206162499438506,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "qpf",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 42,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "qpf-ep3"
+    },
+    "metrics": {
+      "test_accuracy": 0.829,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 3.4279729000118095,
+      "inference": {
+        "ms_per_batch": 36.28677999950014,
+        "ms_per_image": 0.5669809374921897,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "qpf",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 43,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "qpf-ep3"
+    },
+    "metrics": {
+      "test_accuracy": 0.799,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 3.3306495000142604,
+      "inference": {
+        "ms_per_batch": 32.73651999188587,
+        "ms_per_image": 0.5115081248732167,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "qpf",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 44,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "qpf-ep3"
+    },
+    "metrics": {
+      "test_accuracy": 0.817,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 3.3209566000150517,
+      "inference": {
+        "ms_per_batch": 28.574860002845526,
+        "ms_per_image": 0.44648218754446134,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "qpf",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 45,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "qpf-ep3"
+    },
+    "metrics": {
+      "test_accuracy": 0.792,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 3.364180700009456,
+      "inference": {
+        "ms_per_batch": 30.432459991425276,
+        "ms_per_image": 0.47550718736601993,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "qpf",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 46,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "qpf-ep3"
+    },
+    "metrics": {
+      "test_accuracy": 0.826,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 3.4651307000021916,
+      "inference": {
+        "ms_per_batch": 29.381079995073378,
+        "ms_per_image": 0.45907937492302153,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "classical",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 42,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "classical-ep3"
+    },
+    "metrics": {
+      "test_accuracy": 0.755,
+      "parameters": {
+        "trainable": 7870,
+        "total": 7870
+      },
+      "train_time_s": 0.5007818999874871,
+      "inference": {
+        "ms_per_batch": 0.18331999890506268,
+        "ms_per_image": 0.0028643749828916043,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "classical",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 43,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "classical-ep3"
+    },
+    "metrics": {
+      "test_accuracy": 0.719,
+      "parameters": {
+        "trainable": 7870,
+        "total": 7870
+      },
+      "train_time_s": 0.5301481999922544,
+      "inference": {
+        "ms_per_batch": 0.2748000028077513,
+        "ms_per_image": 0.004293750043871114,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "classical",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 44,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "classical-ep3"
+    },
+    "metrics": {
+      "test_accuracy": 0.724,
+      "parameters": {
+        "trainable": 7870,
+        "total": 7870
+      },
+      "train_time_s": 0.5957157000084408,
+      "inference": {
+        "ms_per_batch": 0.26081999531015754,
+        "ms_per_image": 0.0040753124267212115,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "classical",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 45,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "classical-ep3"
+    },
+    "metrics": {
+      "test_accuracy": 0.708,
+      "parameters": {
+        "trainable": 7870,
+        "total": 7870
+      },
+      "train_time_s": 0.5427980000094976,
+      "inference": {
+        "ms_per_batch": 0.2291599928867072,
+        "ms_per_image": 0.0035806248888548,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "classical",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 46,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "classical-ep3"
+    },
+    "metrics": {
+      "test_accuracy": 0.732,
+      "parameters": {
+        "trainable": 7870,
+        "total": 7870
+      },
+      "train_time_s": 0.5786657000135165,
+      "inference": {
+        "ms_per_batch": 0.28366000042296946,
+        "ms_per_image": 0.004432187506608898,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "randconv",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 42,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "randconv-ep3"
+    },
+    "metrics": {
+      "test_accuracy": 0.74,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7870
+      },
+      "train_time_s": 0.4161573000019416,
+      "inference": {
+        "ms_per_batch": 0.19042000640183687,
+        "ms_per_image": 0.002975312600028701,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "randconv",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 43,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "randconv-ep3"
+    },
+    "metrics": {
+      "test_accuracy": 0.699,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7870
+      },
+      "train_time_s": 0.42765859997598454,
+      "inference": {
+        "ms_per_batch": 0.2750599989667535,
+        "ms_per_image": 0.004297812483855523,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "randconv",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 44,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "randconv-ep3"
+    },
+    "metrics": {
+      "test_accuracy": 0.722,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7870
+      },
+      "train_time_s": 0.47672920001787134,
+      "inference": {
+        "ms_per_batch": 0.17692000255919993,
+        "ms_per_image": 0.002764375039987499,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "randconv",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 45,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "randconv-ep3"
+    },
+    "metrics": {
+      "test_accuracy": 0.69,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7870
+      },
+      "train_time_s": 0.43858970000292175,
+      "inference": {
+        "ms_per_batch": 0.22282000281848013,
+        "ms_per_image": 0.003481562544038752,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "randconv",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 46,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "randconv-ep3"
+    },
+    "metrics": {
+      "test_accuracy": 0.723,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7870
+      },
+      "train_time_s": 0.45334099998581223,
+      "inference": {
+        "ms_per_batch": 0.22399999434128404,
+        "ms_per_image": 0.003499999911582563,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "rff",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 42,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "rff-ep3"
+    },
+    "metrics": {
+      "test_accuracy": 0.765,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 0.5630102000141051,
+      "inference": {
+        "ms_per_batch": 1.0657199891284108,
+        "ms_per_image": 0.01665187483013142,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "rff",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 43,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "rff-ep3"
+    },
+    "metrics": {
+      "test_accuracy": 0.76,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 0.5954300999874249,
+      "inference": {
+        "ms_per_batch": 0.6963000050745904,
+        "ms_per_image": 0.010879687579290476,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "rff",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 44,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "rff-ep3"
+    },
+    "metrics": {
+      "test_accuracy": 0.672,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 0.5790696000040043,
+      "inference": {
+        "ms_per_batch": 0.8959200058598071,
+        "ms_per_image": 0.013998750091559486,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "rff",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 45,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "rff-ep3"
+    },
+    "metrics": {
+      "test_accuracy": 0.7,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 0.48758190000080504,
+      "inference": {
+        "ms_per_batch": 0.8817999972961843,
+        "ms_per_image": 0.01377812495775288,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "rff",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 46,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "rff-ep3"
+    },
+    "metrics": {
+      "test_accuracy": 0.724,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 0.5586341999878641,
+      "inference": {
+        "ms_per_batch": 0.6593600031919777,
+        "ms_per_image": 0.010302500049874652,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "quanv",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 42,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "quanv-ep3"
+    },
+    "metrics": {
+      "test_accuracy": 0.758,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 5.072883599990746,
+      "inference": {
+        "ms_per_batch": 43.894479994196445,
+        "ms_per_image": 0.6858512499093194,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "quanv",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 43,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "quanv-ep3"
+    },
+    "metrics": {
+      "test_accuracy": 0.764,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 4.032183300005272,
+      "inference": {
+        "ms_per_batch": 34.6910199848935,
+        "ms_per_image": 0.542047187263961,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "quanv",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 44,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "quanv-ep3"
+    },
+    "metrics": {
+      "test_accuracy": 0.755,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 4.196494600008009,
+      "inference": {
+        "ms_per_batch": 40.35723999841139,
+        "ms_per_image": 0.6305818749751779,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "quanv",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 45,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "quanv-ep3"
+    },
+    "metrics": {
+      "test_accuracy": 0.765,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 4.368185400002403,
+      "inference": {
+        "ms_per_batch": 43.90977999428287,
+        "ms_per_image": 0.6860903124106699,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "quanv",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 46,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "quanv-ep3"
+    },
+    "metrics": {
+      "test_accuracy": 0.746,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 4.4199712999979965,
+      "inference": {
+        "ms_per_batch": 47.50052000163123,
+        "ms_per_image": 0.742195625025488,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "qpf",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 42,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "qpf-ep3"
+    },
+    "metrics": {
+      "test_accuracy": 0.79,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 3.384535999997752,
+      "inference": {
+        "ms_per_batch": 30.15996000613086,
+        "ms_per_image": 0.4712493750957947,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "qpf",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 43,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "qpf-ep3"
+    },
+    "metrics": {
+      "test_accuracy": 0.765,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 3.6783122000051662,
+      "inference": {
+        "ms_per_batch": 34.17963999672793,
+        "ms_per_image": 0.5340568749488739,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "qpf",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 44,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "qpf-ep3"
+    },
+    "metrics": {
+      "test_accuracy": 0.769,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 3.5504952000046615,
+      "inference": {
+        "ms_per_batch": 35.497600003145635,
+        "ms_per_image": 0.5546500000491505,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "qpf",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 45,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "qpf-ep3"
+    },
+    "metrics": {
+      "test_accuracy": 0.768,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 3.740192700002808,
+      "inference": {
+        "ms_per_batch": 29.28888000897132,
+        "ms_per_image": 0.45763875014017685,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "qpf",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 46,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "qpf-ep3"
+    },
+    "metrics": {
+      "test_accuracy": 0.736,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 3.536783600022318,
+      "inference": {
+        "ms_per_batch": 34.39212000230327,
+        "ms_per_image": 0.5373768750359886,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "classical",
+      "epochs": 10,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 42,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "classical-ep10"
+    },
+    "metrics": {
+      "test_accuracy": 0.872,
+      "parameters": {
+        "trainable": 7870,
+        "total": 7870
+      },
+      "train_time_s": 1.8513357000192627,
+      "inference": {
+        "ms_per_batch": 0.2656599972397089,
+        "ms_per_image": 0.004150937456870452,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "classical",
+      "epochs": 10,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 43,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "classical-ep10"
+    },
+    "metrics": {
+      "test_accuracy": 0.895,
+      "parameters": {
+        "trainable": 7870,
+        "total": 7870
+      },
+      "train_time_s": 2.3806940000213217,
+      "inference": {
+        "ms_per_batch": 0.38052001036703587,
+        "ms_per_image": 0.005945625161984935,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "classical",
+      "epochs": 10,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 44,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "classical-ep10"
+    },
+    "metrics": {
+      "test_accuracy": 0.883,
+      "parameters": {
+        "trainable": 7870,
+        "total": 7870
+      },
+      "train_time_s": 4.649058700015303,
+      "inference": {
+        "ms_per_batch": 0.5362999974749982,
+        "ms_per_image": 0.008379687460546847,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "classical",
+      "epochs": 10,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 45,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "classical-ep10"
+    },
+    "metrics": {
+      "test_accuracy": 0.881,
+      "parameters": {
+        "trainable": 7870,
+        "total": 7870
+      },
+      "train_time_s": 4.639362700021593,
+      "inference": {
+        "ms_per_batch": 0.38238000124692917,
+        "ms_per_image": 0.005974687519483268,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "classical",
+      "epochs": 10,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 46,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "classical-ep10"
+    },
+    "metrics": {
+      "test_accuracy": 0.881,
+      "parameters": {
+        "trainable": 7870,
+        "total": 7870
+      },
+      "train_time_s": 4.681764899985865,
+      "inference": {
+        "ms_per_batch": 0.49624000093899673,
+        "ms_per_image": 0.007753750014671824,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "randconv",
+      "epochs": 10,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 42,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "randconv-ep10"
+    },
+    "metrics": {
+      "test_accuracy": 0.836,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7870
+      },
+      "train_time_s": 2.3039856999821495,
+      "inference": {
+        "ms_per_batch": 0.4233800049405545,
+        "ms_per_image": 0.006615312577196164,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "randconv",
+      "epochs": 10,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 43,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "randconv-ep10"
+    },
+    "metrics": {
+      "test_accuracy": 0.859,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7870
+      },
+      "train_time_s": 2.2540515000000596,
+      "inference": {
+        "ms_per_batch": 0.40276001091115177,
+        "ms_per_image": 0.006293125170486746,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "randconv",
+      "epochs": 10,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 44,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "randconv-ep10"
+    },
+    "metrics": {
+      "test_accuracy": 0.83,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7870
+      },
+      "train_time_s": 2.2207976000208873,
+      "inference": {
+        "ms_per_batch": 0.417199992807582,
+        "ms_per_image": 0.006518749887618469,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "randconv",
+      "epochs": 10,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 45,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "randconv-ep10"
+    },
+    "metrics": {
+      "test_accuracy": 0.852,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7870
+      },
+      "train_time_s": 2.2612100999976974,
+      "inference": {
+        "ms_per_batch": 0.4592399927787483,
+        "ms_per_image": 0.007175624887167942,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "randconv",
+      "epochs": 10,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 46,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "randconv-ep10"
+    },
+    "metrics": {
+      "test_accuracy": 0.85,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7870
+      },
+      "train_time_s": 2.2186074999917764,
+      "inference": {
+        "ms_per_batch": 0.42137999553233385,
+        "ms_per_image": 0.006584062430192716,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "rff",
+      "epochs": 10,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 42,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "rff-ep10"
+    },
+    "metrics": {
+      "test_accuracy": 0.857,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 3.511563100008061,
+      "inference": {
+        "ms_per_batch": 4.3090800056234,
+        "ms_per_image": 0.06732937508786563,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "rff",
+      "epochs": 10,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 43,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "rff-ep10"
+    },
+    "metrics": {
+      "test_accuracy": 0.906,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 3.566875099990284,
+      "inference": {
+        "ms_per_batch": 4.098959994735196,
+        "ms_per_image": 0.06404624991773744,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "rff",
+      "epochs": 10,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 44,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "rff-ep10"
+    },
+    "metrics": {
+      "test_accuracy": 0.825,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 3.554664000024786,
+      "inference": {
+        "ms_per_batch": 4.7277599980589,
+        "ms_per_image": 0.07387124996967032,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "rff",
+      "epochs": 10,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 45,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "rff-ep10"
+    },
+    "metrics": {
+      "test_accuracy": 0.835,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 3.506545799988089,
+      "inference": {
+        "ms_per_batch": 5.140819994267076,
+        "ms_per_image": 0.08032531241042307,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "rff",
+      "epochs": 10,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 46,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "rff-ep10"
+    },
+    "metrics": {
+      "test_accuracy": 0.855,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 3.552460400009295,
+      "inference": {
+        "ms_per_batch": 4.12839999771677,
+        "ms_per_image": 0.06450624996432452,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "quanv",
+      "epochs": 10,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 42,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "quanv-ep10"
+    },
+    "metrics": {
+      "test_accuracy": 0.853,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 20.657492700003786,
+      "inference": {
+        "ms_per_batch": 57.24688000045717,
+        "ms_per_image": 0.8944825000071432,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "quanv",
+      "epochs": 10,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 43,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "quanv-ep10"
+    },
+    "metrics": {
+      "test_accuracy": 0.887,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 17.822768200014252,
+      "inference": {
+        "ms_per_batch": 49.8049599933438,
+        "ms_per_image": 0.7782024998959969,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "quanv",
+      "epochs": 10,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 44,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "quanv-ep10"
+    },
+    "metrics": {
+      "test_accuracy": 0.887,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 16.333591100003105,
+      "inference": {
+        "ms_per_batch": 38.68605999741703,
+        "ms_per_image": 0.6044696874596411,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "quanv",
+      "epochs": 10,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 45,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "quanv-ep10"
+    },
+    "metrics": {
+      "test_accuracy": 0.877,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 15.022729499993147,
+      "inference": {
+        "ms_per_batch": 38.476880005327985,
+        "ms_per_image": 0.6012012500832498,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "quanv",
+      "epochs": 10,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 46,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "quanv-ep10"
+    },
+    "metrics": {
+      "test_accuracy": 0.884,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 14.583675999980187,
+      "inference": {
+        "ms_per_batch": 41.10975998919457,
+        "ms_per_image": 0.6423399998311652,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "qpf",
+      "epochs": 10,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 42,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "qpf-ep10"
+    },
+    "metrics": {
+      "test_accuracy": 0.872,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 11.284872499993071,
+      "inference": {
+        "ms_per_batch": 29.754080006387085,
+        "ms_per_image": 0.4649075000997982,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "qpf",
+      "epochs": 10,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 43,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "qpf-ep10"
+    },
+    "metrics": {
+      "test_accuracy": 0.884,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 11.14064870000584,
+      "inference": {
+        "ms_per_batch": 32.09270000224933,
+        "ms_per_image": 0.5014484375351458,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "qpf",
+      "epochs": 10,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 44,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "qpf-ep10"
+    },
+    "metrics": {
+      "test_accuracy": 0.88,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 11.239375799981644,
+      "inference": {
+        "ms_per_batch": 30.916419997811317,
+        "ms_per_image": 0.48306906246580184,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "qpf",
+      "epochs": 10,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 45,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "qpf-ep10"
+    },
+    "metrics": {
+      "test_accuracy": 0.852,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 11.130167900002562,
+      "inference": {
+        "ms_per_batch": 31.333779997657984,
+        "ms_per_image": 0.489590312463406,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "qpf",
+      "epochs": 10,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 46,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "qpf-ep10"
+    },
+    "metrics": {
+      "test_accuracy": 0.859,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 11.102292700001271,
+      "inference": {
+        "ms_per_batch": 25.4511600069236,
+        "ms_per_image": 0.39767437510818127,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "classical",
+      "epochs": 10,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 42,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "classical-ep10"
+    },
+    "metrics": {
+      "test_accuracy": 0.818,
+      "parameters": {
+        "trainable": 7870,
+        "total": 7870
+      },
+      "train_time_s": 1.6664503999927547,
+      "inference": {
+        "ms_per_batch": 0.27310000150464475,
+        "ms_per_image": 0.004267187523510074,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "classical",
+      "epochs": 10,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 43,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "classical-ep10"
+    },
+    "metrics": {
+      "test_accuracy": 0.771,
+      "parameters": {
+        "trainable": 7870,
+        "total": 7870
+      },
+      "train_time_s": 1.7941324999846984,
+      "inference": {
+        "ms_per_batch": 0.17462000250816345,
+        "ms_per_image": 0.002728437539190054,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "classical",
+      "epochs": 10,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 44,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "classical-ep10"
+    },
+    "metrics": {
+      "test_accuracy": 0.788,
+      "parameters": {
+        "trainable": 7870,
+        "total": 7870
+      },
+      "train_time_s": 1.5777038000233006,
+      "inference": {
+        "ms_per_batch": 0.17083999700844288,
+        "ms_per_image": 0.00266937495325692,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "classical",
+      "epochs": 10,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 45,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "classical-ep10"
+    },
+    "metrics": {
+      "test_accuracy": 0.776,
+      "parameters": {
+        "trainable": 7870,
+        "total": 7870
+      },
+      "train_time_s": 1.7327423999959137,
+      "inference": {
+        "ms_per_batch": 0.1733000040985644,
+        "ms_per_image": 0.0027078125640400685,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "classical",
+      "epochs": 10,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 46,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "classical-ep10"
+    },
+    "metrics": {
+      "test_accuracy": 0.785,
+      "parameters": {
+        "trainable": 7870,
+        "total": 7870
+      },
+      "train_time_s": 1.4813368000031915,
+      "inference": {
+        "ms_per_batch": 0.36194000858813524,
+        "ms_per_image": 0.005655312634189613,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "randconv",
+      "epochs": 10,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 42,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "randconv-ep10"
+    },
+    "metrics": {
+      "test_accuracy": 0.785,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7870
+      },
+      "train_time_s": 1.5194686999893747,
+      "inference": {
+        "ms_per_batch": 0.15835999511182308,
+        "ms_per_image": 0.0024743749236222357,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "randconv",
+      "epochs": 10,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 43,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "randconv-ep10"
+    },
+    "metrics": {
+      "test_accuracy": 0.744,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7870
+      },
+      "train_time_s": 1.5704125999764074,
+      "inference": {
+        "ms_per_batch": 0.2923999913036823,
+        "ms_per_image": 0.004568749864120036,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "randconv",
+      "epochs": 10,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 44,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "randconv-ep10"
+    },
+    "metrics": {
+      "test_accuracy": 0.758,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7870
+      },
+      "train_time_s": 1.526578699995298,
+      "inference": {
+        "ms_per_batch": 0.22835999843664467,
+        "ms_per_image": 0.003568124975572573,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "randconv",
+      "epochs": 10,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 45,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "randconv-ep10"
+    },
+    "metrics": {
+      "test_accuracy": 0.756,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7870
+      },
+      "train_time_s": 1.5961741999781225,
+      "inference": {
+        "ms_per_batch": 0.18419999978505075,
+        "ms_per_image": 0.002878124996641418,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "randconv",
+      "epochs": 10,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 46,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "randconv-ep10"
+    },
+    "metrics": {
+      "test_accuracy": 0.769,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7870
+      },
+      "train_time_s": 1.6609868000086863,
+      "inference": {
+        "ms_per_batch": 0.2052999974694103,
+        "ms_per_image": 0.003207812460459536,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "rff",
+      "epochs": 10,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 42,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "rff-ep10"
+    },
+    "metrics": {
+      "test_accuracy": 0.806,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 2.0540511999861337,
+      "inference": {
+        "ms_per_batch": 1.1504799942485988,
+        "ms_per_image": 0.017976249910134356,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "rff",
+      "epochs": 10,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 43,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "rff-ep10"
+    },
+    "metrics": {
+      "test_accuracy": 0.802,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 1.9741409000125714,
+      "inference": {
+        "ms_per_batch": 0.953560002380982,
+        "ms_per_image": 0.014899375037202844,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "rff",
+      "epochs": 10,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 44,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "rff-ep10"
+    },
+    "metrics": {
+      "test_accuracy": 0.729,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 1.8290953000250738,
+      "inference": {
+        "ms_per_batch": 0.636060000397265,
+        "ms_per_image": 0.009938437506207265,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "rff",
+      "epochs": 10,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 45,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "rff-ep10"
+    },
+    "metrics": {
+      "test_accuracy": 0.744,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 1.8500543999834917,
+      "inference": {
+        "ms_per_batch": 0.7793799915816635,
+        "ms_per_image": 0.012177812368463492,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "rff",
+      "epochs": 10,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 46,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "rff-ep10"
+    },
+    "metrics": {
+      "test_accuracy": 0.779,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 1.6930996000010055,
+      "inference": {
+        "ms_per_batch": 1.2188800028525293,
+        "ms_per_image": 0.01904500004457077,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "quanv",
+      "epochs": 10,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 42,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "quanv-ep10"
+    },
+    "metrics": {
+      "test_accuracy": 0.803,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 16.927054200001294,
+      "inference": {
+        "ms_per_batch": 51.71416000230238,
+        "ms_per_image": 0.8080337500359747,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "quanv",
+      "epochs": 10,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 43,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "quanv-ep10"
+    },
+    "metrics": {
+      "test_accuracy": 0.816,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 14.283240099990508,
+      "inference": {
+        "ms_per_batch": 38.93878000089899,
+        "ms_per_image": 0.6084184375140467,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "quanv",
+      "epochs": 10,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 44,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "quanv-ep10"
+    },
+    "metrics": {
+      "test_accuracy": 0.8,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 15.003121199988527,
+      "inference": {
+        "ms_per_batch": 39.09548000083305,
+        "ms_per_image": 0.6108668750130164,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "quanv",
+      "epochs": 10,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 45,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "quanv-ep10"
+    },
+    "metrics": {
+      "test_accuracy": 0.797,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 15.197962499980349,
+      "inference": {
+        "ms_per_batch": 49.35892000212334,
+        "ms_per_image": 0.7712331250331772,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "quanv",
+      "epochs": 10,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 46,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "quanv-ep10"
+    },
+    "metrics": {
+      "test_accuracy": 0.806,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 16.27220230002422,
+      "inference": {
+        "ms_per_batch": 41.77688000490889,
+        "ms_per_image": 0.6527637500767014,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "qpf",
+      "epochs": 10,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 42,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "qpf-ep10"
+    },
+    "metrics": {
+      "test_accuracy": 0.811,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 12.895430700009456,
+      "inference": {
+        "ms_per_batch": 30.384619993856177,
+        "ms_per_image": 0.47475968740400276,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "qpf",
+      "epochs": 10,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 43,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "qpf-ep10"
+    },
+    "metrics": {
+      "test_accuracy": 0.79,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 11.166415200015763,
+      "inference": {
+        "ms_per_batch": 33.96219999413006,
+        "ms_per_image": 0.5306593749082822,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "qpf",
+      "epochs": 10,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 44,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "qpf-ep10"
+    },
+    "metrics": {
+      "test_accuracy": 0.81,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 11.703718699980527,
+      "inference": {
+        "ms_per_batch": 38.15307999611832,
+        "ms_per_image": 0.5961418749393488,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "qpf",
+      "epochs": 10,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 45,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "qpf-ep10"
+    },
+    "metrics": {
+      "test_accuracy": 0.798,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 12.076492100022733,
+      "inference": {
+        "ms_per_batch": 31.525280006462708,
+        "ms_per_image": 0.4925825001009798,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "qpf",
+      "epochs": 10,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 46,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "qpf-ep10"
+    },
+    "metrics": {
+      "test_accuracy": 0.797,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 12.529296399996383,
+      "inference": {
+        "ms_per_batch": 35.753780003869906,
+        "ms_per_image": 0.5586528125604673,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "classical",
+      "epochs": 30,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 42,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "classical-ep30"
+    },
+    "metrics": {
+      "test_accuracy": 0.899,
+      "parameters": {
+        "trainable": 7870,
+        "total": 7870
+      },
+      "train_time_s": 5.816317699995125,
+      "inference": {
+        "ms_per_batch": 0.1847200037445873,
+        "ms_per_image": 0.0028862500585091766,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "classical",
+      "epochs": 30,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 43,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "classical-ep30"
+    },
+    "metrics": {
+      "test_accuracy": 0.91,
+      "parameters": {
+        "trainable": 7870,
+        "total": 7870
+      },
+      "train_time_s": 5.910640199988848,
+      "inference": {
+        "ms_per_batch": 0.24687999975867567,
+        "ms_per_image": 0.0038574999962293073,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "classical",
+      "epochs": 30,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 44,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "classical-ep30"
+    },
+    "metrics": {
+      "test_accuracy": 0.907,
+      "parameters": {
+        "trainable": 7870,
+        "total": 7870
+      },
+      "train_time_s": 5.414733300014632,
+      "inference": {
+        "ms_per_batch": 0.29508001171052456,
+        "ms_per_image": 0.004610625182976946,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "classical",
+      "epochs": 30,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 45,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "classical-ep30"
+    },
+    "metrics": {
+      "test_accuracy": 0.902,
+      "parameters": {
+        "trainable": 7870,
+        "total": 7870
+      },
+      "train_time_s": 6.1316517000086606,
+      "inference": {
+        "ms_per_batch": 0.18302000244148076,
+        "ms_per_image": 0.002859687538148137,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "classical",
+      "epochs": 30,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 46,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "classical-ep30"
+    },
+    "metrics": {
+      "test_accuracy": 0.898,
+      "parameters": {
+        "trainable": 7870,
+        "total": 7870
+      },
+      "train_time_s": 6.297909000015352,
+      "inference": {
+        "ms_per_batch": 0.21886000176891685,
+        "ms_per_image": 0.0034196875276393257,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "randconv",
+      "epochs": 30,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 42,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "randconv-ep30"
+    },
+    "metrics": {
+      "test_accuracy": 0.863,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7870
+      },
+      "train_time_s": 5.771368300018366,
+      "inference": {
+        "ms_per_batch": 0.29280000017024577,
+        "ms_per_image": 0.00457500000266009,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "randconv",
+      "epochs": 30,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 43,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "randconv-ep30"
+    },
+    "metrics": {
+      "test_accuracy": 0.887,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7870
+      },
+      "train_time_s": 4.755056399997557,
+      "inference": {
+        "ms_per_batch": 0.2863400033675134,
+        "ms_per_image": 0.004474062552617397,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "randconv",
+      "epochs": 30,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 44,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "randconv-ep30"
+    },
+    "metrics": {
+      "test_accuracy": 0.877,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7870
+      },
+      "train_time_s": 5.290197400026955,
+      "inference": {
+        "ms_per_batch": 0.22689999314025044,
+        "ms_per_image": 0.003545312392816413,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "randconv",
+      "epochs": 30,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 45,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "randconv-ep30"
+    },
+    "metrics": {
+      "test_accuracy": 0.886,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7870
+      },
+      "train_time_s": 5.085200399975292,
+      "inference": {
+        "ms_per_batch": 0.2023399982135743,
+        "ms_per_image": 0.0031615624720870983,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "randconv",
+      "epochs": 30,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 46,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "randconv-ep30"
+    },
+    "metrics": {
+      "test_accuracy": 0.88,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7870
+      },
+      "train_time_s": 4.7383995999989565,
+      "inference": {
+        "ms_per_batch": 0.22861999459564686,
+        "ms_per_image": 0.003572187415556982,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "rff",
+      "epochs": 30,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 42,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "rff-ep30"
+    },
+    "metrics": {
+      "test_accuracy": 0.872,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 5.667885500006378,
+      "inference": {
+        "ms_per_batch": 0.6293199956417084,
+        "ms_per_image": 0.009833124931901693,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "rff",
+      "epochs": 30,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 43,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "rff-ep30"
+    },
+    "metrics": {
+      "test_accuracy": 0.917,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 6.039643700001761,
+      "inference": {
+        "ms_per_batch": 1.0837800102308393,
+        "ms_per_image": 0.016934062659856863,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "rff",
+      "epochs": 30,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 44,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "rff-ep30"
+    },
+    "metrics": {
+      "test_accuracy": 0.848,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 6.4159361999772955,
+      "inference": {
+        "ms_per_batch": 0.71622000541538,
+        "ms_per_image": 0.011190937584615313,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "rff",
+      "epochs": 30,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 45,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "rff-ep30"
+    },
+    "metrics": {
+      "test_accuracy": 0.853,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 5.320418600022094,
+      "inference": {
+        "ms_per_batch": 1.0217799979727715,
+        "ms_per_image": 0.015965312468324555,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "rff",
+      "epochs": 30,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 46,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "rff-ep30"
+    },
+    "metrics": {
+      "test_accuracy": 0.861,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 6.386976399982814,
+      "inference": {
+        "ms_per_batch": 1.055039995117113,
+        "ms_per_image": 0.01648499992370489,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "quanv",
+      "epochs": 30,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 42,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "quanv-ep30"
+    },
+    "metrics": {
+      "test_accuracy": 0.854,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 50.376989899988985,
+      "inference": {
+        "ms_per_batch": 46.21842000633478,
+        "ms_per_image": 0.722162812598981,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "quanv",
+      "epochs": 30,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 43,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "quanv-ep30"
+    },
+    "metrics": {
+      "test_accuracy": 0.891,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 40.75487839998095,
+      "inference": {
+        "ms_per_batch": 36.86454000417143,
+        "ms_per_image": 0.5760084375651786,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "quanv",
+      "epochs": 30,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 44,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "quanv-ep30"
+    },
+    "metrics": {
+      "test_accuracy": 0.897,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 43.46377059997758,
+      "inference": {
+        "ms_per_batch": 36.23923999839462,
+        "ms_per_image": 0.566238124974916,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "quanv",
+      "epochs": 30,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 45,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "quanv-ep30"
+    },
+    "metrics": {
+      "test_accuracy": 0.891,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 44.05440320001799,
+      "inference": {
+        "ms_per_batch": 44.01497999206185,
+        "ms_per_image": 0.6877340623759665,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "quanv",
+      "epochs": 30,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 46,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "quanv-ep30"
+    },
+    "metrics": {
+      "test_accuracy": 0.905,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 44.777705000014976,
+      "inference": {
+        "ms_per_batch": 49.23542000469752,
+        "ms_per_image": 0.7693034375733987,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "qpf",
+      "epochs": 30,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 42,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "qpf-ep30"
+    },
+    "metrics": {
+      "test_accuracy": 0.876,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 33.42401869999594,
+      "inference": {
+        "ms_per_batch": 28.847839997615665,
+        "ms_per_image": 0.45074749996274477,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "qpf",
+      "epochs": 30,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 43,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "qpf-ep30"
+    },
+    "metrics": {
+      "test_accuracy": 0.905,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 33.961653000005754,
+      "inference": {
+        "ms_per_batch": 32.48301999992691,
+        "ms_per_image": 0.507547187498858,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "qpf",
+      "epochs": 30,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 44,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "qpf-ep30"
+    },
+    "metrics": {
+      "test_accuracy": 0.887,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 34.286261800007196,
+      "inference": {
+        "ms_per_batch": 33.60098000848666,
+        "ms_per_image": 0.525015312632604,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "qpf",
+      "epochs": 30,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 45,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "qpf-ep30"
+    },
+    "metrics": {
+      "test_accuracy": 0.888,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 33.94876110000769,
+      "inference": {
+        "ms_per_batch": 30.08178000454791,
+        "ms_per_image": 0.4700278125710611,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "qpf",
+      "epochs": 30,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 46,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "qpf-ep30"
+    },
+    "metrics": {
+      "test_accuracy": 0.887,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 33.57138819998363,
+      "inference": {
+        "ms_per_batch": 32.414119999157265,
+        "ms_per_image": 0.5064706249868323,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "classical",
+      "epochs": 30,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 42,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "classical-ep30"
+    },
+    "metrics": {
+      "test_accuracy": 0.844,
+      "parameters": {
+        "trainable": 7870,
+        "total": 7870
+      },
+      "train_time_s": 5.187415600026725,
+      "inference": {
+        "ms_per_batch": 0.23632001248188317,
+        "ms_per_image": 0.0036925001950294245,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "classical",
+      "epochs": 30,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 43,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "classical-ep30"
+    },
+    "metrics": {
+      "test_accuracy": 0.807,
+      "parameters": {
+        "trainable": 7870,
+        "total": 7870
+      },
+      "train_time_s": 5.242120900016744,
+      "inference": {
+        "ms_per_batch": 0.22046000813134015,
+        "ms_per_image": 0.0034446876270521898,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "classical",
+      "epochs": 30,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 44,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "classical-ep30"
+    },
+    "metrics": {
+      "test_accuracy": 0.825,
+      "parameters": {
+        "trainable": 7870,
+        "total": 7870
+      },
+      "train_time_s": 5.266849900013767,
+      "inference": {
+        "ms_per_batch": 0.3433000005315989,
+        "ms_per_image": 0.005364062508306233,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "classical",
+      "epochs": 30,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 45,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "classical-ep30"
+    },
+    "metrics": {
+      "test_accuracy": 0.8,
+      "parameters": {
+        "trainable": 7870,
+        "total": 7870
+      },
+      "train_time_s": 5.016558899980737,
+      "inference": {
+        "ms_per_batch": 0.20713999983854592,
+        "ms_per_image": 0.00323656249747728,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "classical",
+      "epochs": 30,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 46,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "classical-ep30"
+    },
+    "metrics": {
+      "test_accuracy": 0.824,
+      "parameters": {
+        "trainable": 7870,
+        "total": 7870
+      },
+      "train_time_s": 5.094496200006688,
+      "inference": {
+        "ms_per_batch": 0.1741600048262626,
+        "ms_per_image": 0.002721250075410353,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "randconv",
+      "epochs": 30,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 42,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "randconv-ep30"
+    },
+    "metrics": {
+      "test_accuracy": 0.818,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7870
+      },
+      "train_time_s": 4.759512999997241,
+      "inference": {
+        "ms_per_batch": 0.16719999257475138,
+        "ms_per_image": 0.0026124998839804903,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "randconv",
+      "epochs": 30,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 43,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "randconv-ep30"
+    },
+    "metrics": {
+      "test_accuracy": 0.775,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7870
+      },
+      "train_time_s": 4.68615839999984,
+      "inference": {
+        "ms_per_batch": 0.1539000018965453,
+        "ms_per_image": 0.00240468752963352,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "randconv",
+      "epochs": 30,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 44,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "randconv-ep30"
+    },
+    "metrics": {
+      "test_accuracy": 0.799,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7870
+      },
+      "train_time_s": 4.5307285000162665,
+      "inference": {
+        "ms_per_batch": 0.23138000397011638,
+        "ms_per_image": 0.0036153125620330684,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "randconv",
+      "epochs": 30,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 45,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "randconv-ep30"
+    },
+    "metrics": {
+      "test_accuracy": 0.78,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7870
+      },
+      "train_time_s": 4.79719060001662,
+      "inference": {
+        "ms_per_batch": 0.18932000966742635,
+        "ms_per_image": 0.0029581251510535367,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "randconv",
+      "epochs": 30,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 46,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "randconv-ep30"
+    },
+    "metrics": {
+      "test_accuracy": 0.8,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7870
+      },
+      "train_time_s": 4.811157099989941,
+      "inference": {
+        "ms_per_batch": 0.20691999234259129,
+        "ms_per_image": 0.003233124880352989,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "rff",
+      "epochs": 30,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 42,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "rff-ep30"
+    },
+    "metrics": {
+      "test_accuracy": 0.825,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 5.557546099997126,
+      "inference": {
+        "ms_per_batch": 0.6811200000811368,
+        "ms_per_image": 0.010642500001267763,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "rff",
+      "epochs": 30,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 43,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "rff-ep30"
+    },
+    "metrics": {
+      "test_accuracy": 0.813,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 5.580150399997365,
+      "inference": {
+        "ms_per_batch": 0.8850800048094243,
+        "ms_per_image": 0.013829375075147254,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "rff",
+      "epochs": 30,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 44,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "rff-ep30"
+    },
+    "metrics": {
+      "test_accuracy": 0.747,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 5.49474980001105,
+      "inference": {
+        "ms_per_batch": 0.80186000559479,
+        "ms_per_image": 0.012529062587418593,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "rff",
+      "epochs": 30,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 45,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "rff-ep30"
+    },
+    "metrics": {
+      "test_accuracy": 0.763,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 5.484883400000399,
+      "inference": {
+        "ms_per_batch": 1.0013600054662675,
+        "ms_per_image": 0.01564625008541043,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "rff",
+      "epochs": 30,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 46,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "rff-ep30"
+    },
+    "metrics": {
+      "test_accuracy": 0.799,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 5.319015499990201,
+      "inference": {
+        "ms_per_batch": 1.1291599948890507,
+        "ms_per_image": 0.017643124920141418,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "quanv",
+      "epochs": 30,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 42,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "quanv-ep30"
+    },
+    "metrics": {
+      "test_accuracy": 0.824,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 48.22123990001273,
+      "inference": {
+        "ms_per_batch": 48.52373999892734,
+        "ms_per_image": 0.7581834374832397,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "quanv",
+      "epochs": 30,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 43,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "quanv-ep30"
+    },
+    "metrics": {
+      "test_accuracy": 0.816,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 40.60062059998745,
+      "inference": {
+        "ms_per_batch": 41.756039997562766,
+        "ms_per_image": 0.6524381249619182,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "quanv",
+      "epochs": 30,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 44,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "quanv-ep30"
+    },
+    "metrics": {
+      "test_accuracy": 0.816,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 42.24150319999899,
+      "inference": {
+        "ms_per_batch": 33.12068000086583,
+        "ms_per_image": 0.5175106250135286,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "quanv",
+      "epochs": 30,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 45,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "quanv-ep30"
+    },
+    "metrics": {
+      "test_accuracy": 0.806,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 43.125754200009396,
+      "inference": {
+        "ms_per_batch": 36.799040006008,
+        "ms_per_image": 0.574985000093875,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "quanv",
+      "epochs": 30,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 46,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "quanv-ep30"
+    },
+    "metrics": {
+      "test_accuracy": 0.816,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 43.45346970000537,
+      "inference": {
+        "ms_per_batch": 39.068019995465875,
+        "ms_per_image": 0.6104378124291543,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "qpf",
+      "epochs": 30,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 42,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "qpf-ep30"
+    },
+    "metrics": {
+      "test_accuracy": 0.833,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 32.96694330000901,
+      "inference": {
+        "ms_per_batch": 32.15224000159651,
+        "ms_per_image": 0.5023787500249455,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "qpf",
+      "epochs": 30,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 43,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "qpf-ep30"
+    },
+    "metrics": {
+      "test_accuracy": 0.803,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 33.30596389999846,
+      "inference": {
+        "ms_per_batch": 28.909100004239008,
+        "ms_per_image": 0.4517046875662345,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "qpf",
+      "epochs": 30,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 44,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "qpf-ep30"
+    },
+    "metrics": {
+      "test_accuracy": 0.808,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 32.96524130000034,
+      "inference": {
+        "ms_per_batch": 25.360019993968308,
+        "ms_per_image": 0.3962503124057548,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "qpf",
+      "epochs": 30,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 45,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "qpf-ep30"
+    },
+    "metrics": {
+      "test_accuracy": 0.804,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 32.50881230001687,
+      "inference": {
+        "ms_per_batch": 28.284800000255927,
+        "ms_per_image": 0.44195000000399887,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "qpf",
+      "epochs": 30,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 46,
+      "device": "cpu",
+      "environment": {
+        "python": "3.11.15",
+        "torch": "2.12.0+cpu",
+        "pennylane": "0.45.0",
+        "git_commit": "af58583"
+      },
+      "variant": "qpf-ep30"
+    },
+    "metrics": {
+      "test_accuracy": 0.806,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 32.76450309998472,
+      "inference": {
+        "ms_per_batch": 29.89098000107333,
+        "ms_per_image": 0.4670465625167708,
+        "batch_size": 64
+      }
+    }
+  }
+]

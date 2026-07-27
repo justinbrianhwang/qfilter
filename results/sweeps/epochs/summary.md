@@ -1,0 +1,32 @@
+| dataset | model | test acc (mean ¡¾ std) | n | trainable params | train time (s) | inference (ms/img) |
+|---|---|---|---|---|---|---|
+| fashionmnist | classical-ep10 | 0.7876 ¡¾ 0.0183 | 5 | 7,870 | 1.7 | 0.00 |
+| fashionmnist | classical-ep3 | 0.7276 ¡¾ 0.0176 | 5 | 7,870 | 0.5 | 0.00 |
+| fashionmnist | classical-ep30 | 0.8200 ¡¾ 0.0172 | 5 | 7,870 | 5.2 | 0.00 |
+| fashionmnist | qpf-ep10 | 0.8012 ¡¾ 0.0090 | 5 | 7,850 | 12.1 | 0.53 |
+| fashionmnist | qpf-ep3 | 0.7656 ¡¾ 0.0193 | 5 | 7,850 | 3.6 | 0.51 |
+| fashionmnist | qpf-ep30 | 0.8108 ¡¾ 0.0126 | 5 | 7,850 | 32.9 | 0.45 |
+| fashionmnist | quanv-ep10 | 0.8044 ¡¾ 0.0073 | 5 | 7,850 | 15.5 | 0.69 |
+| fashionmnist | quanv-ep3 | 0.7576 ¡¾ 0.0077 | 5 | 7,850 | 4.4 | 0.66 |
+| fashionmnist | quanv-ep30 | 0.8156 ¡¾ 0.0064 | 5 | 7,850 | 43.5 | 0.62 |
+| fashionmnist | randconv-ep10 | 0.7624 ¡¾ 0.0154 | 5 | 7,850 | 1.6 | 0.00 |
+| fashionmnist | randconv-ep3 | 0.7148 ¡¾ 0.0201 | 5 | 7,850 | 0.4 | 0.00 |
+| fashionmnist | randconv-ep30 | 0.7944 ¡¾ 0.0173 | 5 | 7,850 | 4.7 | 0.00 |
+| fashionmnist | rff-ep10 | 0.7720 ¡¾ 0.0344 | 5 | 7,850 | 1.9 | 0.01 |
+| fashionmnist | rff-ep3 | 0.7242 ¡¾ 0.0395 | 5 | 7,850 | 0.6 | 0.01 |
+| fashionmnist | rff-ep30 | 0.7894 ¡¾ 0.0332 | 5 | 7,850 | 5.5 | 0.01 |
+| mnist | classical-ep10 | 0.8824 ¡¾ 0.0082 | 5 | 7,870 | 3.6 | 0.01 |
+| mnist | classical-ep3 | 0.7932 ¡¾ 0.0198 | 5 | 7,870 | 0.5 | 0.00 |
+| mnist | classical-ep30 | 0.9032 ¡¾ 0.0052 | 5 | 7,870 | 5.9 | 0.00 |
+| mnist | qpf-ep10 | 0.8694 ¡¾ 0.0136 | 5 | 7,850 | 11.2 | 0.47 |
+| mnist | qpf-ep3 | 0.8126 ¡¾ 0.0164 | 5 | 7,850 | 3.4 | 0.49 |
+| mnist | qpf-ep30 | 0.8886 ¡¾ 0.0104 | 5 | 7,850 | 33.8 | 0.49 |
+| mnist | quanv-ep10 | 0.8776 ¡¾ 0.0143 | 5 | 7,850 | 16.9 | 0.70 |
+| mnist | quanv-ep3 | 0.8228 ¡¾ 0.0252 | 5 | 7,850 | 4.3 | 0.60 |
+| mnist | quanv-ep30 | 0.8876 ¡¾ 0.0196 | 5 | 7,850 | 44.7 | 0.66 |
+| mnist | randconv-ep10 | 0.8454 ¡¾ 0.0120 | 5 | 7,850 | 2.3 | 0.01 |
+| mnist | randconv-ep3 | 0.7492 ¡¾ 0.0257 | 5 | 7,850 | 0.4 | 0.00 |
+| mnist | randconv-ep30 | 0.8786 ¡¾ 0.0097 | 5 | 7,850 | 5.1 | 0.00 |
+| mnist | rff-ep10 | 0.8556 ¡¾ 0.0312 | 5 | 7,850 | 3.5 | 0.07 |
+| mnist | rff-ep3 | 0.7882 ¡¾ 0.0360 | 5 | 7,850 | 0.5 | 0.01 |
+| mnist | rff-ep30 | 0.8702 ¡¾ 0.0277 | 5 | 7,850 | 6.0 | 0.01 |

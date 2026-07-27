@@ -1,0 +1,33 @@
+{
+  "config": {
+    "dataset": "svhn",
+    "model": "classical",
+    "epochs": 3,
+    "batch_size": 64,
+    "train_size": 1000,
+    "test_size": 1000,
+    "lr": 0.001,
+    "seed": 45,
+    "device": "cpu",
+    "environment": {
+      "python": "3.11.15",
+      "torch": "2.12.0+cpu",
+      "pennylane": "0.45.0",
+      "git_commit": "af58583"
+    },
+    "variant": "classical-n1000"
+  },
+  "metrics": {
+    "test_accuracy": 0.16,
+    "parameters": {
+      "trainable": 30886,
+      "total": 30886
+    },
+    "train_time_s": 0.6994963000179268,
+    "inference": {
+      "ms_per_batch": 3.3212800044566393,
+      "ms_per_image": 0.05189500006963499,
+      "batch_size": 64
+    }
+  }
+}

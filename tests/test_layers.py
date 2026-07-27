@@ -3,7 +3,7 @@
 import pytest
 import torch
 
-from qfz.layers import PQCConv2D, QPF, Quanvolution2D
+from qfz.layers import PQCConv2D, QPF, Quanvolution2D, RFFFilter2D
 from qfz.layers.qpf import ENTANGLEMENT_PATTERNS
 
 
@@ -121,3 +121,32 @@ def test_patch_chunking_consistent():
     full = Quanvolution2D(1, 4, seed=5, max_patch_batch=4096)(x)
     chunked = Quanvolution2D(1, 4, seed=5, max_patch_batch=7)(x)
     assert torch.allclose(full, chunked, atol=1e-6)
+
+
+# --------------------------------------------------------------- RFFFilter2D
+
+def test_rff_shape_range_and_frozen():
+    layer = RFFFilter2D(in_channels=1, out_channels=4)
+    x = torch.rand(2, 1, 28, 28)
+    out = layer(x)
+    assert out.shape == (2, 4, 14, 14)
+    assert out.min() >= -1.0 and out.max() <= 1.0
+    assert sum(p.numel() for p in layer.parameters()) == 0  # buffers only
+
+
+def test_rff_seed_determinism():
+    x = torch.rand(2, 1, 8, 8)
+    a = RFFFilter2D(1, 4, seed=7)(x)
+    assert torch.allclose(RFFFilter2D(1, 4, seed=7)(x), a)
+    assert not torch.allclose(RFFFilter2D(1, 4, seed=8)(x), a)
+
+
+def test_rff_frequencies_in_quantum_spectrum():
+    layer = RFFFilter2D(in_channels=1, out_channels=4)
+    assert set(layer.freqs.unique().tolist()) <= {-1.0, 0.0, 1.0}
+    assert (layer.freqs.abs().sum(dim=1) > 0).all()  # no constant features
+
+
+def test_rff_per_channel_rgb():
+    layer = RFFFilter2D(in_channels=3, out_channels=12, per_channel=True)
+    assert layer(torch.rand(2, 3, 32, 32)).shape == (2, 12, 16, 16)

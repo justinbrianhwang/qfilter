@@ -1,0 +1,33 @@
+{
+  "config": {
+    "dataset": "svhn",
+    "model": "randconv",
+    "epochs": 3,
+    "batch_size": 64,
+    "train_size": 1000,
+    "test_size": 1000,
+    "lr": 0.001,
+    "seed": 45,
+    "device": "cpu",
+    "environment": {
+      "python": "3.11.15",
+      "torch": "2.12.0+cpu",
+      "pennylane": "0.45.0",
+      "git_commit": "af58583"
+    },
+    "variant": "randconv-n1000"
+  },
+  "metrics": {
+    "test_accuracy": 0.195,
+    "parameters": {
+      "trainable": 30730,
+      "total": 30886
+    },
+    "train_time_s": 0.25451719999546185,
+    "inference": {
+      "ms_per_batch": 0.2689999993890524,
+      "ms_per_image": 0.004203124990453944,
+      "batch_size": 64
+    }
+  }
+}

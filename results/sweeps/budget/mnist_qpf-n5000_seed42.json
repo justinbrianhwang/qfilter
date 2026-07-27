@@ -1,0 +1,33 @@
+{
+  "config": {
+    "dataset": "mnist",
+    "model": "qpf",
+    "epochs": 3,
+    "batch_size": 64,
+    "train_size": 5000,
+    "test_size": 1000,
+    "lr": 0.001,
+    "seed": 42,
+    "device": "cpu",
+    "environment": {
+      "python": "3.11.15",
+      "torch": "2.12.0+cpu",
+      "pennylane": "0.45.0",
+      "git_commit": "af58583"
+    },
+    "variant": "qpf-n5000"
+  },
+  "metrics": {
+    "test_accuracy": 0.861,
+    "parameters": {
+      "trainable": 7850,
+      "total": 7850
+    },
+    "train_time_s": 10.903462899994338,
+    "inference": {
+      "ms_per_batch": 38.076560001354665,
+      "ms_per_image": 0.5949462500211666,
+      "batch_size": 64
+    }
+  }
+}

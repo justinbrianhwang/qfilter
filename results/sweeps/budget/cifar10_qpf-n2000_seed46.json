@@ -1,0 +1,33 @@
+{
+  "config": {
+    "dataset": "cifar10",
+    "model": "qpf",
+    "epochs": 3,
+    "batch_size": 64,
+    "train_size": 2000,
+    "test_size": 1000,
+    "lr": 0.001,
+    "seed": 46,
+    "device": "cpu",
+    "environment": {
+      "python": "3.11.15",
+      "torch": "2.12.0+cpu",
+      "pennylane": "0.45.0",
+      "git_commit": "af58583"
+    },
+    "variant": "qpf-n2000"
+  },
+  "metrics": {
+    "test_accuracy": 0.329,
+    "parameters": {
+      "trainable": 30730,
+      "total": 30730
+    },
+    "train_time_s": 13.610339000006206,
+    "inference": {
+      "ms_per_batch": 136.04050000431016,
+      "ms_per_image": 2.1256328125673463,
+      "batch_size": 64
+    }
+  }
+}

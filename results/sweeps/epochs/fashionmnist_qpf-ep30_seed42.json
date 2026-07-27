@@ -1,0 +1,33 @@
+{
+  "config": {
+    "dataset": "fashionmnist",
+    "model": "qpf",
+    "epochs": 30,
+    "batch_size": 64,
+    "train_size": 2000,
+    "test_size": 1000,
+    "lr": 0.001,
+    "seed": 42,
+    "device": "cpu",
+    "environment": {
+      "python": "3.11.15",
+      "torch": "2.12.0+cpu",
+      "pennylane": "0.45.0",
+      "git_commit": "af58583"
+    },
+    "variant": "qpf-ep30"
+  },
+  "metrics": {
+    "test_accuracy": 0.833,
+    "parameters": {
+      "trainable": 7850,
+      "total": 7850
+    },
+    "train_time_s": 32.96694330000901,
+    "inference": {
+      "ms_per_batch": 32.15224000159651,
+      "ms_per_image": 0.5023787500249455,
+      "batch_size": 64
+    }
+  }
+}

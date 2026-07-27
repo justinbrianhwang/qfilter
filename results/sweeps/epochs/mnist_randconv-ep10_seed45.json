@@ -1,0 +1,33 @@
+{
+  "config": {
+    "dataset": "mnist",
+    "model": "randconv",
+    "epochs": 10,
+    "batch_size": 64,
+    "train_size": 2000,
+    "test_size": 1000,
+    "lr": 0.001,
+    "seed": 45,
+    "device": "cpu",
+    "environment": {
+      "python": "3.11.15",
+      "torch": "2.12.0+cpu",
+      "pennylane": "0.45.0",
+      "git_commit": "af58583"
+    },
+    "variant": "randconv-ep10"
+  },
+  "metrics": {
+    "test_accuracy": 0.852,
+    "parameters": {
+      "trainable": 7850,
+      "total": 7870
+    },
+    "train_time_s": 2.2612100999976974,
+    "inference": {
+      "ms_per_batch": 0.4592399927787483,
+      "ms_per_image": 0.007175624887167942,
+      "batch_size": 64
+    }
+  }
+}

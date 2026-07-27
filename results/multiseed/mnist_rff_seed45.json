@@ -1,0 +1,32 @@
+{
+  "config": {
+    "dataset": "mnist",
+    "model": "rff",
+    "epochs": 3,
+    "batch_size": 64,
+    "train_size": 2000,
+    "test_size": 1000,
+    "lr": 0.001,
+    "seed": 45,
+    "device": "cpu",
+    "environment": {
+      "python": "3.11.15",
+      "torch": "2.12.0+cpu",
+      "pennylane": "0.45.0",
+      "git_commit": "af58583"
+    }
+  },
+  "metrics": {
+    "test_accuracy": 0.796,
+    "parameters": {
+      "trainable": 7850,
+      "total": 7850
+    },
+    "train_time_s": 1.042340800020611,
+    "inference": {
+      "ms_per_batch": 4.395519994432107,
+      "ms_per_image": 0.06867999991300167,
+      "batch_size": 64
+    }
+  }
+}
