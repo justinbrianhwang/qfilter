@@ -149,6 +149,9 @@ python -m qfz.benchmarks.sweeps --sweep budget
 
 # print the aggregated comparison table (mean ± std over seeds)
 python -m qfz.benchmarks.evaluate --results results/multiseed
+
+# reproduce every reported statistic (Welch/paired t, Holm, Cohen's d, CIs)
+python scripts/stats_analysis.py
 ```
 
 Each run saves a self-describing JSON (config + metrics + library
@@ -225,7 +228,9 @@ qfz/
 
 Circuit structures and initial angles are fixed by each layer's `seed`
 argument; `qfz.utils.set_seed(42)` fixes the remaining randomness (weight
-init, shuffling, subsampling).
+init, shuffling, subsampling). The exact environment used for the
+published benchmarks is pinned in `requirements-lock.txt`
+(Python 3.11.15); the test suite runs on every push via GitHub Actions.
 
 ## References
 
