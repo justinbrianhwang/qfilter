@@ -1,0 +1,30 @@
+{
+  "config": {
+    "dataset": "fashionmnist",
+    "model": "qpf",
+    "epochs": 3,
+    "batch_size": 64,
+    "train_size": 2000,
+    "test_size": 1000,
+    "lr": 0.001,
+    "seed": 46,
+    "device": "cpu",
+    "layer_kwargs": {
+      "entanglement": "horizontal"
+    },
+    "variant": "qpf-horizontal"
+  },
+  "metrics": {
+    "test_accuracy": 0.743,
+    "parameters": {
+      "trainable": 7850,
+      "total": 7850
+    },
+    "train_time_s": 5.63345069999923,
+    "inference": {
+      "ms_per_batch": 44.03308000182733,
+      "ms_per_image": 0.688016875028552,
+      "batch_size": 64
+    }
+  }
+}

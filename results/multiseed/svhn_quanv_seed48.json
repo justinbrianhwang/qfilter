@@ -1,0 +1,26 @@
+{
+  "config": {
+    "dataset": "svhn",
+    "model": "quanv",
+    "epochs": 3,
+    "batch_size": 64,
+    "train_size": 2000,
+    "test_size": 1000,
+    "lr": 0.001,
+    "seed": 48,
+    "device": "cpu"
+  },
+  "metrics": {
+    "test_accuracy": 0.197,
+    "parameters": {
+      "trainable": 30730,
+      "total": 30730
+    },
+    "train_time_s": 27.28770460000669,
+    "inference": {
+      "ms_per_batch": 267.8366600011941,
+      "ms_per_image": 4.184947812518658,
+      "batch_size": 64
+    }
+  }
+}

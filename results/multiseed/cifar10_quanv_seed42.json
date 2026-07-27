@@ -1,0 +1,26 @@
+{
+  "config": {
+    "dataset": "cifar10",
+    "model": "quanv",
+    "epochs": 3,
+    "batch_size": 64,
+    "train_size": 2000,
+    "test_size": 1000,
+    "lr": 0.001,
+    "seed": 42,
+    "device": "cpu"
+  },
+  "metrics": {
+    "test_accuracy": 0.379,
+    "parameters": {
+      "trainable": 30730,
+      "total": 30730
+    },
+    "train_time_s": 105.88338849999127,
+    "inference": {
+      "ms_per_batch": 3290.032380001503,
+      "ms_per_image": 51.406755937523485,
+      "batch_size": 64
+    }
+  }
+}

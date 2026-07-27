@@ -1,0 +1,30 @@
+{
+  "config": {
+    "dataset": "mnist",
+    "model": "quanv",
+    "epochs": 3,
+    "batch_size": 64,
+    "train_size": 2000,
+    "test_size": 1000,
+    "lr": 0.001,
+    "seed": 43,
+    "device": "cpu",
+    "layer_kwargs": {
+      "trainable": true
+    },
+    "variant": "quanv-trained"
+  },
+  "metrics": {
+    "test_accuracy": 0.817,
+    "parameters": {
+      "trainable": 7854,
+      "total": 7854
+    },
+    "train_time_s": 8.69796309999947,
+    "inference": {
+      "ms_per_batch": 50.360019999789074,
+      "ms_per_image": 0.7868753124967043,
+      "batch_size": 64
+    }
+  }
+}

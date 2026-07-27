@@ -1,0 +1,26 @@
+{
+  "config": {
+    "dataset": "svhn",
+    "model": "qpf",
+    "epochs": 3,
+    "batch_size": 64,
+    "train_size": 2000,
+    "test_size": 1000,
+    "lr": 0.001,
+    "seed": 45,
+    "device": "cpu"
+  },
+  "metrics": {
+    "test_accuracy": 0.21,
+    "parameters": {
+      "trainable": 30730,
+      "total": 30730
+    },
+    "train_time_s": 19.777823700002045,
+    "inference": {
+      "ms_per_batch": 193.6733800015645,
+      "ms_per_image": 3.0261465625244455,
+      "batch_size": 64
+    }
+  }
+}

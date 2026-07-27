@@ -1,0 +1,26 @@
+{
+  "config": {
+    "dataset": "cifar10",
+    "model": "qpf",
+    "epochs": 3,
+    "batch_size": 64,
+    "train_size": 2000,
+    "test_size": 1000,
+    "lr": 0.001,
+    "seed": 50,
+    "device": "cpu"
+  },
+  "metrics": {
+    "test_accuracy": 0.314,
+    "parameters": {
+      "trainable": 30730,
+      "total": 30730
+    },
+    "train_time_s": 19.74651040000026,
+    "inference": {
+      "ms_per_batch": 169.87805999815464,
+      "ms_per_image": 2.6543446874711663,
+      "batch_size": 64
+    }
+  }
+}

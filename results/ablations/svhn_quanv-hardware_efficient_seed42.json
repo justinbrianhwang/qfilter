@@ -1,0 +1,30 @@
+{
+  "config": {
+    "dataset": "svhn",
+    "model": "quanv",
+    "epochs": 3,
+    "batch_size": 64,
+    "train_size": 2000,
+    "test_size": 1000,
+    "lr": 0.001,
+    "seed": 42,
+    "device": "cpu",
+    "layer_kwargs": {
+      "circuit": "hardware_efficient"
+    },
+    "variant": "quanv-hardware_efficient"
+  },
+  "metrics": {
+    "test_accuracy": 0.186,
+    "parameters": {
+      "trainable": 30730,
+      "total": 30730
+    },
+    "train_time_s": 22.65129339999112,
+    "inference": {
+      "ms_per_batch": 171.43517999793403,
+      "ms_per_image": 2.678674687467719,
+      "batch_size": 64
+    }
+  }
+}

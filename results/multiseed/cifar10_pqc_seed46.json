@@ -1,0 +1,26 @@
+{
+  "config": {
+    "dataset": "cifar10",
+    "model": "pqc",
+    "epochs": 3,
+    "batch_size": 64,
+    "train_size": 2000,
+    "test_size": 1000,
+    "lr": 0.001,
+    "seed": 46,
+    "device": "cpu"
+  },
+  "metrics": {
+    "test_accuracy": 0.312,
+    "parameters": {
+      "trainable": 30746,
+      "total": 30746
+    },
+    "train_time_s": 85.29450409999117,
+    "inference": {
+      "ms_per_batch": 368.4142000012798,
+      "ms_per_image": 5.756471875019997,
+      "batch_size": 64
+    }
+  }
+}

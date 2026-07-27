@@ -1,0 +1,26 @@
+{
+  "config": {
+    "dataset": "fashionmnist",
+    "model": "pqc",
+    "epochs": 3,
+    "batch_size": 64,
+    "train_size": 2000,
+    "test_size": 1000,
+    "lr": 0.001,
+    "seed": 49,
+    "device": "cpu"
+  },
+  "metrics": {
+    "test_accuracy": 0.726,
+    "parameters": {
+      "trainable": 7866,
+      "total": 7866
+    },
+    "train_time_s": 48.03413929999806,
+    "inference": {
+      "ms_per_batch": 283.4407200018177,
+      "ms_per_image": 4.428761250028401,
+      "batch_size": 64
+    }
+  }
+}

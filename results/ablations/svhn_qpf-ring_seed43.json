@@ -1,0 +1,30 @@
+{
+  "config": {
+    "dataset": "svhn",
+    "model": "qpf",
+    "epochs": 3,
+    "batch_size": 64,
+    "train_size": 2000,
+    "test_size": 1000,
+    "lr": 0.001,
+    "seed": 43,
+    "device": "cpu",
+    "layer_kwargs": {
+      "entanglement": "ring"
+    },
+    "variant": "qpf-ring"
+  },
+  "metrics": {
+    "test_accuracy": 0.158,
+    "parameters": {
+      "trainable": 30730,
+      "total": 30730
+    },
+    "train_time_s": 19.26940609999292,
+    "inference": {
+      "ms_per_batch": 211.07424000510946,
+      "ms_per_image": 3.2980350000798353,
+      "batch_size": 64
+    }
+  }
+}

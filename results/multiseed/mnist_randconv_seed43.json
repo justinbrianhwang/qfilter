@@ -1,0 +1,26 @@
+{
+  "config": {
+    "dataset": "mnist",
+    "model": "randconv",
+    "epochs": 3,
+    "batch_size": 64,
+    "train_size": 2000,
+    "test_size": 1000,
+    "lr": 0.001,
+    "seed": 43,
+    "device": "cpu"
+  },
+  "metrics": {
+    "test_accuracy": 0.704,
+    "parameters": {
+      "trainable": 7850,
+      "total": 7870
+    },
+    "train_time_s": 1.8363921999989543,
+    "inference": {
+      "ms_per_batch": 0.6339599989587441,
+      "ms_per_image": 0.009905624983730377,
+      "batch_size": 64
+    }
+  }
+}

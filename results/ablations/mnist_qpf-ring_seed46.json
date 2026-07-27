@@ -1,0 +1,30 @@
+{
+  "config": {
+    "dataset": "mnist",
+    "model": "qpf",
+    "epochs": 3,
+    "batch_size": 64,
+    "train_size": 2000,
+    "test_size": 1000,
+    "lr": 0.001,
+    "seed": 46,
+    "device": "cpu",
+    "layer_kwargs": {
+      "entanglement": "ring"
+    },
+    "variant": "qpf-ring"
+  },
+  "metrics": {
+    "test_accuracy": 0.826,
+    "parameters": {
+      "trainable": 7850,
+      "total": 7850
+    },
+    "train_time_s": 3.735101799989934,
+    "inference": {
+      "ms_per_batch": 31.59624000254553,
+      "ms_per_image": 0.49369125003977393,
+      "batch_size": 64
+    }
+  }
+}

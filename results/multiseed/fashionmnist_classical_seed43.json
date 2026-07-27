@@ -1,0 +1,26 @@
+{
+  "config": {
+    "dataset": "fashionmnist",
+    "model": "classical",
+    "epochs": 3,
+    "batch_size": 64,
+    "train_size": 2000,
+    "test_size": 1000,
+    "lr": 0.001,
+    "seed": 43,
+    "device": "cpu"
+  },
+  "metrics": {
+    "test_accuracy": 0.719,
+    "parameters": {
+      "trainable": 7870,
+      "total": 7870
+    },
+    "train_time_s": 4.604847800001153,
+    "inference": {
+      "ms_per_batch": 1.3068600004771724,
+      "ms_per_image": 0.02041968750745582,
+      "batch_size": 64
+    }
+  }
+}

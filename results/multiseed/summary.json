@@ -1,0 +1,5202 @@
+[
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "classical",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 42,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.807,
+      "parameters": {
+        "trainable": 7870,
+        "total": 7870
+      },
+      "train_time_s": 7.797719900001539,
+      "inference": {
+        "ms_per_batch": 21.90454000083264,
+        "ms_per_image": 0.34225843751301,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "randconv",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 42,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.764,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7870
+      },
+      "train_time_s": 6.685681300004944,
+      "inference": {
+        "ms_per_batch": 33.53255999973044,
+        "ms_per_image": 0.5239462499957881,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "quanv",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 42,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.783,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 30.269952400005423,
+      "inference": {
+        "ms_per_batch": 898.3608999988064,
+        "ms_per_image": 14.03688906248135,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "qpf",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 42,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.829,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 16.435320999997202,
+      "inference": {
+        "ms_per_batch": 895.4703800030984,
+        "ms_per_image": 13.991724687548412,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "pqc",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 42,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.787,
+      "parameters": {
+        "trainable": 7866,
+        "total": 7866
+      },
+      "train_time_s": 84.70615449998877,
+      "inference": {
+        "ms_per_batch": 190.62383999989834,
+        "ms_per_image": 2.9784974999984115,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "classical",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 42,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.755,
+      "parameters": {
+        "trainable": 7870,
+        "total": 7870
+      },
+      "train_time_s": 5.724322599999141,
+      "inference": {
+        "ms_per_batch": 0.9888400032650678,
+        "ms_per_image": 0.015450625051016685,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "randconv",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 42,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.74,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7870
+      },
+      "train_time_s": 1.3400992999959271,
+      "inference": {
+        "ms_per_batch": 0.9763200010638684,
+        "ms_per_image": 0.015255000016622944,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "quanv",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 42,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.758,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 17.382697099994402,
+      "inference": {
+        "ms_per_batch": 90.71721999789588,
+        "ms_per_image": 1.4174565624671231,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "qpf",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 42,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.79,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 11.04734570000437,
+      "inference": {
+        "ms_per_batch": 90.85653999645729,
+        "ms_per_image": 1.419633437444645,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "pqc",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 42,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.739,
+      "parameters": {
+        "trainable": 7866,
+        "total": 7866
+      },
+      "train_time_s": 69.91754059999948,
+      "inference": {
+        "ms_per_batch": 278.70233999565244,
+        "ms_per_image": 4.354724062432069,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "cifar10",
+      "model": "classical",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 42,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.32,
+      "parameters": {
+        "trainable": 30886,
+        "total": 30886
+      },
+      "train_time_s": 7.536010900003021,
+      "inference": {
+        "ms_per_batch": 23.7717399984831,
+        "ms_per_image": 0.3714334374762984,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "cifar10",
+      "model": "randconv",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 42,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.332,
+      "parameters": {
+        "trainable": 30730,
+        "total": 30886
+      },
+      "train_time_s": 3.258615500002634,
+      "inference": {
+        "ms_per_batch": 30.2588199992897,
+        "ms_per_image": 0.47279406248890155,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "cifar10",
+      "model": "quanv",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 42,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.379,
+      "parameters": {
+        "trainable": 30730,
+        "total": 30730
+      },
+      "train_time_s": 105.88338849999127,
+      "inference": {
+        "ms_per_batch": 3290.032380001503,
+        "ms_per_image": 51.406755937523485,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "cifar10",
+      "model": "qpf",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 42,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.367,
+      "parameters": {
+        "trainable": 30730,
+        "total": 30730
+      },
+      "train_time_s": 107.51802099999622,
+      "inference": {
+        "ms_per_batch": 464.53357999853324,
+        "ms_per_image": 7.258337187477082,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "cifar10",
+      "model": "pqc",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 42,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.371,
+      "parameters": {
+        "trainable": 30746,
+        "total": 30746
+      },
+      "train_time_s": 337.76978220000456,
+      "inference": {
+        "ms_per_batch": 830.8642799995141,
+        "ms_per_image": 12.982254374992408,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "svhn",
+      "model": "classical",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 42,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.162,
+      "parameters": {
+        "trainable": 30886,
+        "total": 30886
+      },
+      "train_time_s": 5.427664699993329,
+      "inference": {
+        "ms_per_batch": 23.312720004469156,
+        "ms_per_image": 0.36426125006983057,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "svhn",
+      "model": "randconv",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 42,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.16,
+      "parameters": {
+        "trainable": 30730,
+        "total": 30886
+      },
+      "train_time_s": 2.2726957999984734,
+      "inference": {
+        "ms_per_batch": 17.155459997593425,
+        "ms_per_image": 0.26805406246239727,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "svhn",
+      "model": "quanv",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 42,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.193,
+      "parameters": {
+        "trainable": 30730,
+        "total": 30730
+      },
+      "train_time_s": 27.593955799995456,
+      "inference": {
+        "ms_per_batch": 262.48691999644507,
+        "ms_per_image": 4.101358124944454,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "svhn",
+      "model": "qpf",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 42,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.208,
+      "parameters": {
+        "trainable": 30730,
+        "total": 30730
+      },
+      "train_time_s": 19.625735699999495,
+      "inference": {
+        "ms_per_batch": 216.94982000335585,
+        "ms_per_image": 3.389840937552435,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "svhn",
+      "model": "pqc",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 42,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.192,
+      "parameters": {
+        "trainable": 30746,
+        "total": 30746
+      },
+      "train_time_s": 106.92574330000207,
+      "inference": {
+        "ms_per_batch": 441.8355400004657,
+        "ms_per_image": 6.9036803125072765,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "classical",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 43,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.761,
+      "parameters": {
+        "trainable": 7870,
+        "total": 7870
+      },
+      "train_time_s": 4.657431800005725,
+      "inference": {
+        "ms_per_batch": 1.4621200010878965,
+        "ms_per_image": 0.022845625016998383,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "randconv",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 43,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.704,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7870
+      },
+      "train_time_s": 1.8363921999989543,
+      "inference": {
+        "ms_per_batch": 0.6339599989587441,
+        "ms_per_image": 0.009905624983730377,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "quanv",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 43,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.813,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 12.9453918000072,
+      "inference": {
+        "ms_per_batch": 71.9007200008491,
+        "ms_per_image": 1.1234487500132673,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "qpf",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 43,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.799,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 11.967575300004683,
+      "inference": {
+        "ms_per_batch": 122.71281999710482,
+        "ms_per_image": 1.9173878124547628,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "pqc",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 43,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.736,
+      "parameters": {
+        "trainable": 7866,
+        "total": 7866
+      },
+      "train_time_s": 92.72367510000186,
+      "inference": {
+        "ms_per_batch": 335.3322199982358,
+        "ms_per_image": 5.239565937472435,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "classical",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 43,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.719,
+      "parameters": {
+        "trainable": 7870,
+        "total": 7870
+      },
+      "train_time_s": 4.604847800001153,
+      "inference": {
+        "ms_per_batch": 1.3068600004771724,
+        "ms_per_image": 0.02041968750745582,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "randconv",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 43,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.699,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7870
+      },
+      "train_time_s": 1.605491099995561,
+      "inference": {
+        "ms_per_batch": 0.8504599973093718,
+        "ms_per_image": 0.013288437457958935,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "quanv",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 43,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.764,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 15.546354200007045,
+      "inference": {
+        "ms_per_batch": 130.8669399964856,
+        "ms_per_image": 2.0447959374450875,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "qpf",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 43,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.765,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 11.476178900004015,
+      "inference": {
+        "ms_per_batch": 300.1897000038298,
+        "ms_per_image": 4.69046406255984,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "pqc",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 43,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.705,
+      "parameters": {
+        "trainable": 7866,
+        "total": 7866
+      },
+      "train_time_s": 75.56494409999868,
+      "inference": {
+        "ms_per_batch": 188.888980000047,
+        "ms_per_image": 2.9513903125007346,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "cifar10",
+      "model": "classical",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 43,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.309,
+      "parameters": {
+        "trainable": 30886,
+        "total": 30886
+      },
+      "train_time_s": 6.362269000004744,
+      "inference": {
+        "ms_per_batch": 20.49408000020776,
+        "ms_per_image": 0.32022000000324624,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "cifar10",
+      "model": "randconv",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 43,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.295,
+      "parameters": {
+        "trainable": 30730,
+        "total": 30886
+      },
+      "train_time_s": 2.3021688000008,
+      "inference": {
+        "ms_per_batch": 11.124139997991733,
+        "ms_per_image": 0.17381468746862083,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "cifar10",
+      "model": "quanv",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 43,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.364,
+      "parameters": {
+        "trainable": 30730,
+        "total": 30730
+      },
+      "train_time_s": 37.8973404999997,
+      "inference": {
+        "ms_per_batch": 718.9185999945039,
+        "ms_per_image": 11.233103124914123,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "cifar10",
+      "model": "qpf",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 43,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.319,
+      "parameters": {
+        "trainable": 30730,
+        "total": 30730
+      },
+      "train_time_s": 58.38800570000603,
+      "inference": {
+        "ms_per_batch": 639.4271599972853,
+        "ms_per_image": 9.991049374957583,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "cifar10",
+      "model": "pqc",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 43,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.312,
+      "parameters": {
+        "trainable": 30746,
+        "total": 30746
+      },
+      "train_time_s": 174.25297190000128,
+      "inference": {
+        "ms_per_batch": 814.9609999964014,
+        "ms_per_image": 12.733765624943771,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "svhn",
+      "model": "classical",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 43,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.159,
+      "parameters": {
+        "trainable": 30886,
+        "total": 30886
+      },
+      "train_time_s": 5.246668300009333,
+      "inference": {
+        "ms_per_batch": 6.958080001641065,
+        "ms_per_image": 0.10872000002564164,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "svhn",
+      "model": "randconv",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 43,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.149,
+      "parameters": {
+        "trainable": 30730,
+        "total": 30886
+      },
+      "train_time_s": 2.500569199997699,
+      "inference": {
+        "ms_per_batch": 4.14304000150878,
+        "ms_per_image": 0.06473500002357468,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "svhn",
+      "model": "quanv",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 43,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.228,
+      "parameters": {
+        "trainable": 30730,
+        "total": 30730
+      },
+      "train_time_s": 23.602517699997406,
+      "inference": {
+        "ms_per_batch": 269.4624599942472,
+        "ms_per_image": 4.210350937410112,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "svhn",
+      "model": "qpf",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 43,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.158,
+      "parameters": {
+        "trainable": 30730,
+        "total": 30730
+      },
+      "train_time_s": 18.855420600011712,
+      "inference": {
+        "ms_per_batch": 217.576640000334,
+        "ms_per_image": 3.399635000005219,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "svhn",
+      "model": "pqc",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 43,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.208,
+      "parameters": {
+        "trainable": 30746,
+        "total": 30746
+      },
+      "train_time_s": 108.75261990001309,
+      "inference": {
+        "ms_per_batch": 593.8126799999736,
+        "ms_per_image": 9.278323124999588,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "classical",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 44,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.809,
+      "parameters": {
+        "trainable": 7870,
+        "total": 7870
+      },
+      "train_time_s": 5.277701900005923,
+      "inference": {
+        "ms_per_batch": 0.7709000026807189,
+        "ms_per_image": 0.012045312541886233,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "randconv",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 44,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.761,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7870
+      },
+      "train_time_s": 1.234799900004873,
+      "inference": {
+        "ms_per_batch": 12.678860005689785,
+        "ms_per_image": 0.1981071875889029,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "quanv",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 44,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.835,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 15.25333550000505,
+      "inference": {
+        "ms_per_batch": 220.5225000041537,
+        "ms_per_image": 3.4456640625649015,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "qpf",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 44,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.817,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 10.506239900001674,
+      "inference": {
+        "ms_per_batch": 226.4558200025931,
+        "ms_per_image": 3.538372187540517,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "pqc",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 44,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.73,
+      "parameters": {
+        "trainable": 7866,
+        "total": 7866
+      },
+      "train_time_s": 65.6656565000012,
+      "inference": {
+        "ms_per_batch": 148.56332000344992,
+        "ms_per_image": 2.321301875053905,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "classical",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 44,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.724,
+      "parameters": {
+        "trainable": 7870,
+        "total": 7870
+      },
+      "train_time_s": 4.781680899992352,
+      "inference": {
+        "ms_per_batch": 0.8790200023213401,
+        "ms_per_image": 0.01373468753627094,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "randconv",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 44,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.722,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7870
+      },
+      "train_time_s": 1.1636584999941988,
+      "inference": {
+        "ms_per_batch": 4.263799998443574,
+        "ms_per_image": 0.06662187497568084,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "quanv",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 44,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.755,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 16.09372850001091,
+      "inference": {
+        "ms_per_batch": 102.78555999393575,
+        "ms_per_image": 1.606024374905246,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "qpf",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 44,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.769,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 10.985161600008723,
+      "inference": {
+        "ms_per_batch": 50.877220000256784,
+        "ms_per_image": 0.7949565625040123,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "pqc",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 44,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.716,
+      "parameters": {
+        "trainable": 7866,
+        "total": 7866
+      },
+      "train_time_s": 32.59366779999982,
+      "inference": {
+        "ms_per_batch": 119.06088000105228,
+        "ms_per_image": 1.860326250016442,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "cifar10",
+      "model": "classical",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 44,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.323,
+      "parameters": {
+        "trainable": 30886,
+        "total": 30886
+      },
+      "train_time_s": 5.0528271999937715,
+      "inference": {
+        "ms_per_batch": 13.44888000166975,
+        "ms_per_image": 0.21013875002608984,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "cifar10",
+      "model": "randconv",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 44,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.28,
+      "parameters": {
+        "trainable": 30730,
+        "total": 30886
+      },
+      "train_time_s": 2.2317008999962127,
+      "inference": {
+        "ms_per_batch": 10.68068000022322,
+        "ms_per_image": 0.1668856250034878,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "cifar10",
+      "model": "quanv",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 44,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.326,
+      "parameters": {
+        "trainable": 30730,
+        "total": 30730
+      },
+      "train_time_s": 26.14236170001095,
+      "inference": {
+        "ms_per_batch": 241.60875999950804,
+        "ms_per_image": 3.775136874992313,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "cifar10",
+      "model": "qpf",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 44,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.343,
+      "parameters": {
+        "trainable": 30730,
+        "total": 30730
+      },
+      "train_time_s": 80.21455140000035,
+      "inference": {
+        "ms_per_batch": 198.49212000262924,
+        "ms_per_image": 3.101439375041082,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "cifar10",
+      "model": "pqc",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 44,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.312,
+      "parameters": {
+        "trainable": 30746,
+        "total": 30746
+      },
+      "train_time_s": 110.53052690000914,
+      "inference": {
+        "ms_per_batch": 867.2090000007302,
+        "ms_per_image": 13.550140625011409,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "svhn",
+      "model": "classical",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 44,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.185,
+      "parameters": {
+        "trainable": 30886,
+        "total": 30886
+      },
+      "train_time_s": 5.410230699999374,
+      "inference": {
+        "ms_per_batch": 45.35778000135906,
+        "ms_per_image": 0.7087153125212353,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "svhn",
+      "model": "randconv",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 44,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.19,
+      "parameters": {
+        "trainable": 30730,
+        "total": 30886
+      },
+      "train_time_s": 2.204186799994204,
+      "inference": {
+        "ms_per_batch": 24.50393999752123,
+        "ms_per_image": 0.3828740624612692,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "svhn",
+      "model": "quanv",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 44,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.216,
+      "parameters": {
+        "trainable": 30730,
+        "total": 30730
+      },
+      "train_time_s": 23.91442559999996,
+      "inference": {
+        "ms_per_batch": 229.71245999797247,
+        "ms_per_image": 3.58925718746832,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "svhn",
+      "model": "qpf",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 44,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.222,
+      "parameters": {
+        "trainable": 30730,
+        "total": 30730
+      },
+      "train_time_s": 18.9293650000036,
+      "inference": {
+        "ms_per_batch": 184.88598000258207,
+        "ms_per_image": 2.888843437540345,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "svhn",
+      "model": "pqc",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 44,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.216,
+      "parameters": {
+        "trainable": 30746,
+        "total": 30746
+      },
+      "train_time_s": 108.70099139999365,
+      "inference": {
+        "ms_per_batch": 455.79304000129923,
+        "ms_per_image": 7.1217662500203005,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "classical",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 45,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.788,
+      "parameters": {
+        "trainable": 7870,
+        "total": 7870
+      },
+      "train_time_s": 5.371894700001576,
+      "inference": {
+        "ms_per_batch": 1.9943199964473024,
+        "ms_per_image": 0.0311612499444891,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "randconv",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 45,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.764,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7870
+      },
+      "train_time_s": 2.49798249999003,
+      "inference": {
+        "ms_per_batch": 0.59606000140775,
+        "ms_per_image": 0.009313437521996093,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "quanv",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 45,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.843,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 20.16586280000047,
+      "inference": {
+        "ms_per_batch": 261.3514800003031,
+        "ms_per_image": 4.083616875004736,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "qpf",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 45,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.792,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 7.779385700006969,
+      "inference": {
+        "ms_per_batch": 75.77908000093885,
+        "ms_per_image": 1.1840481250146695,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "pqc",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 45,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.777,
+      "parameters": {
+        "trainable": 7866,
+        "total": 7866
+      },
+      "train_time_s": 38.319297399997595,
+      "inference": {
+        "ms_per_batch": 256.57113999768626,
+        "ms_per_image": 4.008924062463848,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "classical",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 45,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.708,
+      "parameters": {
+        "trainable": 7870,
+        "total": 7870
+      },
+      "train_time_s": 4.744795900012832,
+      "inference": {
+        "ms_per_batch": 3.2047600048827007,
+        "ms_per_image": 0.0500743750762922,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "randconv",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 45,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.69,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7870
+      },
+      "train_time_s": 1.1112754000059795,
+      "inference": {
+        "ms_per_batch": 1.0981000028550625,
+        "ms_per_image": 0.01715781254461035,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "quanv",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 45,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.765,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 8.048042299997178,
+      "inference": {
+        "ms_per_batch": 64.82058000401594,
+        "ms_per_image": 1.012821562562749,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "qpf",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 45,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.768,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 7.022042999989935,
+      "inference": {
+        "ms_per_batch": 54.46501999977045,
+        "ms_per_image": 0.8510159374964132,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "pqc",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 45,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.723,
+      "parameters": {
+        "trainable": 7866,
+        "total": 7866
+      },
+      "train_time_s": 32.55289880000055,
+      "inference": {
+        "ms_per_batch": 197.33698000200093,
+        "ms_per_image": 3.0833903125312645,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "cifar10",
+      "model": "classical",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 45,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.345,
+      "parameters": {
+        "trainable": 30886,
+        "total": 30886
+      },
+      "train_time_s": 5.344773300006636,
+      "inference": {
+        "ms_per_batch": 26.140439996379428,
+        "ms_per_image": 0.40844437494342856,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "cifar10",
+      "model": "randconv",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 45,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.315,
+      "parameters": {
+        "trainable": 30730,
+        "total": 30886
+      },
+      "train_time_s": 2.492533500000718,
+      "inference": {
+        "ms_per_batch": 5.915160002768971,
+        "ms_per_image": 0.09242437504326517,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "cifar10",
+      "model": "quanv",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 45,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.349,
+      "parameters": {
+        "trainable": 30730,
+        "total": 30730
+      },
+      "train_time_s": 27.952232099996763,
+      "inference": {
+        "ms_per_batch": 378.5357800050406,
+        "ms_per_image": 5.914621562578759,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "cifar10",
+      "model": "qpf",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 45,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.362,
+      "parameters": {
+        "trainable": 30730,
+        "total": 30730
+      },
+      "train_time_s": 73.65813480000361,
+      "inference": {
+        "ms_per_batch": 188.9253999950597,
+        "ms_per_image": 2.951959374922808,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "cifar10",
+      "model": "pqc",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 45,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.364,
+      "parameters": {
+        "trainable": 30746,
+        "total": 30746
+      },
+      "train_time_s": 120.72670670000662,
+      "inference": {
+        "ms_per_batch": 481.6309799964074,
+        "ms_per_image": 7.525484062443866,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "svhn",
+      "model": "classical",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 45,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.199,
+      "parameters": {
+        "trainable": 30886,
+        "total": 30886
+      },
+      "train_time_s": 5.103770600006101,
+      "inference": {
+        "ms_per_batch": 24.19021999812685,
+        "ms_per_image": 0.377972187470732,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "svhn",
+      "model": "randconv",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 45,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.126,
+      "parameters": {
+        "trainable": 30730,
+        "total": 30886
+      },
+      "train_time_s": 2.349637499995879,
+      "inference": {
+        "ms_per_batch": 24.17931999952998,
+        "ms_per_image": 0.37780187499265594,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "svhn",
+      "model": "quanv",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 45,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.196,
+      "parameters": {
+        "trainable": 30730,
+        "total": 30730
+      },
+      "train_time_s": 25.187545399996452,
+      "inference": {
+        "ms_per_batch": 241.22042000235524,
+        "ms_per_image": 3.7690690625368006,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "svhn",
+      "model": "qpf",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 45,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.21,
+      "parameters": {
+        "trainable": 30730,
+        "total": 30730
+      },
+      "train_time_s": 19.777823700002045,
+      "inference": {
+        "ms_per_batch": 193.6733800015645,
+        "ms_per_image": 3.0261465625244455,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "svhn",
+      "model": "pqc",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 45,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.222,
+      "parameters": {
+        "trainable": 30746,
+        "total": 30746
+      },
+      "train_time_s": 107.4499053999898,
+      "inference": {
+        "ms_per_batch": 445.78853999846615,
+        "ms_per_image": 6.965445937476034,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "classical",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 46,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.801,
+      "parameters": {
+        "trainable": 7870,
+        "total": 7870
+      },
+      "train_time_s": 4.127505699987523,
+      "inference": {
+        "ms_per_batch": 0.47577999939676374,
+        "ms_per_image": 0.0074340624905744335,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "randconv",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 46,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.753,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7870
+      },
+      "train_time_s": 0.8714905999950133,
+      "inference": {
+        "ms_per_batch": 0.8080999949015677,
+        "ms_per_image": 0.012626562420336995,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "quanv",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 46,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.84,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 8.4866483000078,
+      "inference": {
+        "ms_per_batch": 75.66469999728724,
+        "ms_per_image": 1.1822609374576132,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "qpf",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 46,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.826,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 6.533773999995901,
+      "inference": {
+        "ms_per_batch": 47.802320003393106,
+        "ms_per_image": 0.7469112500530173,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "pqc",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 46,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.77,
+      "parameters": {
+        "trainable": 7866,
+        "total": 7866
+      },
+      "train_time_s": 29.11866499998723,
+      "inference": {
+        "ms_per_batch": 121.65473999921232,
+        "ms_per_image": 1.9008553124876926,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "classical",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 46,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.732,
+      "parameters": {
+        "trainable": 7870,
+        "total": 7870
+      },
+      "train_time_s": 3.656503899997915,
+      "inference": {
+        "ms_per_batch": 0.4050199961056933,
+        "ms_per_image": 0.0063284374391514575,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "randconv",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 46,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.723,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7870
+      },
+      "train_time_s": 0.8379019999993034,
+      "inference": {
+        "ms_per_batch": 0.4543200018815696,
+        "ms_per_image": 0.007098750029399525,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "quanv",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 46,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.746,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 6.7418685000011465,
+      "inference": {
+        "ms_per_batch": 61.00923999911174,
+        "ms_per_image": 0.953269374986121,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "qpf",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 46,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.736,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 5.19870050001191,
+      "inference": {
+        "ms_per_batch": 41.24928000092041,
+        "ms_per_image": 0.6445200000143814,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "pqc",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 46,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.749,
+      "parameters": {
+        "trainable": 7866,
+        "total": 7866
+      },
+      "train_time_s": 26.191496300001745,
+      "inference": {
+        "ms_per_batch": 114.21356000064407,
+        "ms_per_image": 1.7845868750100635,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "cifar10",
+      "model": "classical",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 46,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.332,
+      "parameters": {
+        "trainable": 30886,
+        "total": 30886
+      },
+      "train_time_s": 0.8720752999943215,
+      "inference": {
+        "ms_per_batch": 0.634999995236285,
+        "ms_per_image": 0.009921874925566954,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "cifar10",
+      "model": "randconv",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 46,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.312,
+      "parameters": {
+        "trainable": 30730,
+        "total": 30886
+      },
+      "train_time_s": 0.8129292000085115,
+      "inference": {
+        "ms_per_batch": 0.6788000027881935,
+        "ms_per_image": 0.010606250043565524,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "cifar10",
+      "model": "quanv",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 46,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.346,
+      "parameters": {
+        "trainable": 30730,
+        "total": 30730
+      },
+      "train_time_s": 18.553361199999927,
+      "inference": {
+        "ms_per_batch": 216.8372999993153,
+        "ms_per_image": 3.3880828124893014,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "cifar10",
+      "model": "qpf",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 46,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.329,
+      "parameters": {
+        "trainable": 30730,
+        "total": 30730
+      },
+      "train_time_s": 14.91740099999879,
+      "inference": {
+        "ms_per_batch": 136.11355999892112,
+        "ms_per_image": 2.1267743749831425,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "cifar10",
+      "model": "pqc",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 46,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.312,
+      "parameters": {
+        "trainable": 30746,
+        "total": 30746
+      },
+      "train_time_s": 85.29450409999117,
+      "inference": {
+        "ms_per_batch": 368.4142000012798,
+        "ms_per_image": 5.756471875019997,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "svhn",
+      "model": "classical",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 46,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.206,
+      "parameters": {
+        "trainable": 30886,
+        "total": 30886
+      },
+      "train_time_s": 5.392122100005508,
+      "inference": {
+        "ms_per_batch": 17.630859999917448,
+        "ms_per_image": 0.2754821874987101,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "svhn",
+      "model": "randconv",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 46,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.181,
+      "parameters": {
+        "trainable": 30730,
+        "total": 30886
+      },
+      "train_time_s": 2.643590399995446,
+      "inference": {
+        "ms_per_batch": 19.58094000001438,
+        "ms_per_image": 0.3059521875002247,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "svhn",
+      "model": "quanv",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 46,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.201,
+      "parameters": {
+        "trainable": 30730,
+        "total": 30730
+      },
+      "train_time_s": 26.629196499998216,
+      "inference": {
+        "ms_per_batch": 226.82210000348277,
+        "ms_per_image": 3.5440953125544183,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "svhn",
+      "model": "qpf",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 46,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.209,
+      "parameters": {
+        "trainable": 30730,
+        "total": 30730
+      },
+      "train_time_s": 19.284943600010592,
+      "inference": {
+        "ms_per_batch": 180.059140000958,
+        "ms_per_image": 2.8134240625149687,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "svhn",
+      "model": "pqc",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 46,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.233,
+      "parameters": {
+        "trainable": 30746,
+        "total": 30746
+      },
+      "train_time_s": 108.60996709999745,
+      "inference": {
+        "ms_per_batch": 442.5878600042779,
+        "ms_per_image": 6.915435312566842,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "classical",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 47,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.82,
+      "parameters": {
+        "trainable": 7870,
+        "total": 7870
+      },
+      "train_time_s": 0.7893391999969026,
+      "inference": {
+        "ms_per_batch": 0.36281999782659113,
+        "ms_per_image": 0.0056690624660404865,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "randconv",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 47,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.795,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7870
+      },
+      "train_time_s": 0.7167817000008654,
+      "inference": {
+        "ms_per_batch": 0.3505200002109632,
+        "ms_per_image": 0.0054768750032963,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "quanv",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 47,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.838,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 5.637923300004331,
+      "inference": {
+        "ms_per_batch": 53.74511999543756,
+        "ms_per_image": 0.8397674999287119,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "qpf",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 47,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.852,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 4.49974289999227,
+      "inference": {
+        "ms_per_batch": 39.67129999655299,
+        "ms_per_image": 0.6198640624461405,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "pqc",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 47,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.648,
+      "parameters": {
+        "trainable": 7866,
+        "total": 7866
+      },
+      "train_time_s": 21.328108599991538,
+      "inference": {
+        "ms_per_batch": 96.82828000222798,
+        "ms_per_image": 1.5129418750348123,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "classical",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 47,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.733,
+      "parameters": {
+        "trainable": 7870,
+        "total": 7870
+      },
+      "train_time_s": 0.8108129000029294,
+      "inference": {
+        "ms_per_batch": 0.4537600005278364,
+        "ms_per_image": 0.0070900000082474435,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "randconv",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 47,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.708,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7870
+      },
+      "train_time_s": 0.7329048999963561,
+      "inference": {
+        "ms_per_batch": 0.4901000007521361,
+        "ms_per_image": 0.007657812511752127,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "quanv",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 47,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.739,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 5.7243396999983815,
+      "inference": {
+        "ms_per_batch": 55.97113999829162,
+        "ms_per_image": 0.8745490624733065,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "qpf",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 47,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.762,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 4.73822499999369,
+      "inference": {
+        "ms_per_batch": 38.615399997797795,
+        "ms_per_image": 0.6033656249655905,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "pqc",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 47,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.702,
+      "parameters": {
+        "trainable": 7866,
+        "total": 7866
+      },
+      "train_time_s": 22.843411000008928,
+      "inference": {
+        "ms_per_batch": 114.88143999595195,
+        "ms_per_image": 1.7950224999367492,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "cifar10",
+      "model": "classical",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 47,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.33,
+      "parameters": {
+        "trainable": 30886,
+        "total": 30886
+      },
+      "train_time_s": 1.5684367999929236,
+      "inference": {
+        "ms_per_batch": 0.6179399992106482,
+        "ms_per_image": 0.009655312487666379,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "cifar10",
+      "model": "randconv",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 47,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.289,
+      "parameters": {
+        "trainable": 30730,
+        "total": 30886
+      },
+      "train_time_s": 0.8605718000035267,
+      "inference": {
+        "ms_per_batch": 0.7303999998839572,
+        "ms_per_image": 0.011412499998186831,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "cifar10",
+      "model": "quanv",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 47,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.323,
+      "parameters": {
+        "trainable": 30730,
+        "total": 30730
+      },
+      "train_time_s": 38.41620300000068,
+      "inference": {
+        "ms_per_batch": 343.81888000061736,
+        "ms_per_image": 5.372170000009646,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "cifar10",
+      "model": "qpf",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 47,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.322,
+      "parameters": {
+        "trainable": 30730,
+        "total": 30730
+      },
+      "train_time_s": 36.26787899999181,
+      "inference": {
+        "ms_per_batch": 610.6643599981908,
+        "ms_per_image": 9.54163062497173,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "cifar10",
+      "model": "pqc",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 47,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.307,
+      "parameters": {
+        "trainable": 30746,
+        "total": 30746
+      },
+      "train_time_s": 161.81694109999808,
+      "inference": {
+        "ms_per_batch": 1027.6679000002332,
+        "ms_per_image": 16.057310937503644,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "svhn",
+      "model": "classical",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 47,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.202,
+      "parameters": {
+        "trainable": 30886,
+        "total": 30886
+      },
+      "train_time_s": 4.7210516999912215,
+      "inference": {
+        "ms_per_batch": 11.145280004711822,
+        "ms_per_image": 0.1741450000736222,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "svhn",
+      "model": "randconv",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 47,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.195,
+      "parameters": {
+        "trainable": 30730,
+        "total": 30886
+      },
+      "train_time_s": 2.4734898999886354,
+      "inference": {
+        "ms_per_batch": 19.04248000064399,
+        "ms_per_image": 0.29753875001006236,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "svhn",
+      "model": "quanv",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 47,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.194,
+      "parameters": {
+        "trainable": 30730,
+        "total": 30730
+      },
+      "train_time_s": 25.196905000004335,
+      "inference": {
+        "ms_per_batch": 235.81587999651674,
+        "ms_per_image": 3.684623124945574,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "svhn",
+      "model": "qpf",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 47,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.195,
+      "parameters": {
+        "trainable": 30730,
+        "total": 30730
+      },
+      "train_time_s": 18.792750599997817,
+      "inference": {
+        "ms_per_batch": 193.24095999763813,
+        "ms_per_image": 3.0193899999630958,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "svhn",
+      "model": "pqc",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 47,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.189,
+      "parameters": {
+        "trainable": 30746,
+        "total": 30746
+      },
+      "train_time_s": 111.77504320000298,
+      "inference": {
+        "ms_per_batch": 487.9161800025031,
+        "ms_per_image": 7.623690312539111,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "classical",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 48,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.805,
+      "parameters": {
+        "trainable": 7870,
+        "total": 7870
+      },
+      "train_time_s": 7.933755299993209,
+      "inference": {
+        "ms_per_batch": 0.6916599988471717,
+        "ms_per_image": 0.010807187481987057,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "randconv",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 48,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.734,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7870
+      },
+      "train_time_s": 2.6536868999974104,
+      "inference": {
+        "ms_per_batch": 6.256020002183504,
+        "ms_per_image": 0.09775031253411726,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "quanv",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 48,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.829,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 10.226790200002142,
+      "inference": {
+        "ms_per_batch": 84.80432000069413,
+        "ms_per_image": 1.3250675000108458,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "qpf",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 48,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.791,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 8.397316199989291,
+      "inference": {
+        "ms_per_batch": 56.09804000123404,
+        "ms_per_image": 0.8765318750192819,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "pqc",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 48,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.739,
+      "parameters": {
+        "trainable": 7866,
+        "total": 7866
+      },
+      "train_time_s": 36.69296210000175,
+      "inference": {
+        "ms_per_batch": 144.76158000179566,
+        "ms_per_image": 2.2618996875280573,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "classical",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 48,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.707,
+      "parameters": {
+        "trainable": 7870,
+        "total": 7870
+      },
+      "train_time_s": 4.441406800004188,
+      "inference": {
+        "ms_per_batch": 0.8474599977489561,
+        "ms_per_image": 0.013241562464827439,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "randconv",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 48,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.685,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7870
+      },
+      "train_time_s": 1.28933600000164,
+      "inference": {
+        "ms_per_batch": 0.9148199984338135,
+        "ms_per_image": 0.014294062475528335,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "quanv",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 48,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.744,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 11.545019400000456,
+      "inference": {
+        "ms_per_batch": 73.84067999955732,
+        "ms_per_image": 1.1537606249930832,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "qpf",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 48,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.759,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 6.728812699991977,
+      "inference": {
+        "ms_per_batch": 134.38935999874957,
+        "ms_per_image": 2.099833749980462,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "pqc",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 48,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.727,
+      "parameters": {
+        "trainable": 7866,
+        "total": 7866
+      },
+      "train_time_s": 63.993295899999794,
+      "inference": {
+        "ms_per_batch": 134.50033999979496,
+        "ms_per_image": 2.1015678124967963,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "cifar10",
+      "model": "classical",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 48,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.343,
+      "parameters": {
+        "trainable": 30886,
+        "total": 30886
+      },
+      "train_time_s": 7.86584149999544,
+      "inference": {
+        "ms_per_batch": 6.107080000219867,
+        "ms_per_image": 0.09542312500343542,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "cifar10",
+      "model": "randconv",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 48,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.302,
+      "parameters": {
+        "trainable": 30730,
+        "total": 30886
+      },
+      "train_time_s": 3.153898400007165,
+      "inference": {
+        "ms_per_batch": 24.196899999515153,
+        "ms_per_image": 0.3780765624924243,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "cifar10",
+      "model": "quanv",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 48,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.324,
+      "parameters": {
+        "trainable": 30730,
+        "total": 30730
+      },
+      "train_time_s": 52.67484210000839,
+      "inference": {
+        "ms_per_batch": 676.0424400010379,
+        "ms_per_image": 10.563163125016217,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "cifar10",
+      "model": "qpf",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 48,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.337,
+      "parameters": {
+        "trainable": 30730,
+        "total": 30730
+      },
+      "train_time_s": 29.445682100005797,
+      "inference": {
+        "ms_per_batch": 418.65707999968436,
+        "ms_per_image": 6.541516874995068,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "cifar10",
+      "model": "pqc",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 48,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.335,
+      "parameters": {
+        "trainable": 30746,
+        "total": 30746
+      },
+      "train_time_s": 163.1288377000019,
+      "inference": {
+        "ms_per_batch": 627.8941399999894,
+        "ms_per_image": 9.810845937499835,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "svhn",
+      "model": "classical",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 48,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.206,
+      "parameters": {
+        "trainable": 30886,
+        "total": 30886
+      },
+      "train_time_s": 5.2362083999905735,
+      "inference": {
+        "ms_per_batch": 5.043759997352026,
+        "ms_per_image": 0.07880874995862541,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "svhn",
+      "model": "randconv",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 48,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.158,
+      "parameters": {
+        "trainable": 30730,
+        "total": 30886
+      },
+      "train_time_s": 2.2627370999980485,
+      "inference": {
+        "ms_per_batch": 24.9562800017884,
+        "ms_per_image": 0.38994187502794375,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "svhn",
+      "model": "quanv",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 48,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.197,
+      "parameters": {
+        "trainable": 30730,
+        "total": 30730
+      },
+      "train_time_s": 27.28770460000669,
+      "inference": {
+        "ms_per_batch": 267.8366600011941,
+        "ms_per_image": 4.184947812518658,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "svhn",
+      "model": "qpf",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 48,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.158,
+      "parameters": {
+        "trainable": 30730,
+        "total": 30730
+      },
+      "train_time_s": 19.205835100001423,
+      "inference": {
+        "ms_per_batch": 179.93522000033408,
+        "ms_per_image": 2.81148781250522,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "svhn",
+      "model": "pqc",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 48,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.197,
+      "parameters": {
+        "trainable": 30746,
+        "total": 30746
+      },
+      "train_time_s": 107.13210080000863,
+      "inference": {
+        "ms_per_batch": 495.4888400010532,
+        "ms_per_image": 7.742013125016456,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "classical",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 49,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.8,
+      "parameters": {
+        "trainable": 7870,
+        "total": 7870
+      },
+      "train_time_s": 5.118298800007324,
+      "inference": {
+        "ms_per_batch": 0.8831199986161664,
+        "ms_per_image": 0.0137987499783776,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "randconv",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 49,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.771,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7870
+      },
+      "train_time_s": 1.3192980000021635,
+      "inference": {
+        "ms_per_batch": 1.0102800006279722,
+        "ms_per_image": 0.015785625009812065,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "quanv",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 49,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.836,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 10.006782300013583,
+      "inference": {
+        "ms_per_batch": 69.0275400003884,
+        "ms_per_image": 1.0785553125060687,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "qpf",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 49,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.828,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 25.340662699993118,
+      "inference": {
+        "ms_per_batch": 58.42267999541946,
+        "ms_per_image": 0.912854374928429,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "pqc",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 49,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.736,
+      "parameters": {
+        "trainable": 7866,
+        "total": 7866
+      },
+      "train_time_s": 41.498302299994975,
+      "inference": {
+        "ms_per_batch": 166.97027999907732,
+        "ms_per_image": 2.608910624985583,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "classical",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 49,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.724,
+      "parameters": {
+        "trainable": 7870,
+        "total": 7870
+      },
+      "train_time_s": 5.650903099987772,
+      "inference": {
+        "ms_per_batch": 0.9995200001867489,
+        "ms_per_image": 0.015617500002917952,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "randconv",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 49,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.681,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7870
+      },
+      "train_time_s": 0.934990599998855,
+      "inference": {
+        "ms_per_batch": 1.1942599987378344,
+        "ms_per_image": 0.018660312480278662,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "quanv",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 49,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.73,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 17.291952300001867,
+      "inference": {
+        "ms_per_batch": 77.85032000101637,
+        "ms_per_image": 1.2164112500158808,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "qpf",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 49,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.763,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 8.918985299998894,
+      "inference": {
+        "ms_per_batch": 68.06975999788847,
+        "ms_per_image": 1.0635899999670073,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "pqc",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 49,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.726,
+      "parameters": {
+        "trainable": 7866,
+        "total": 7866
+      },
+      "train_time_s": 48.03413929999806,
+      "inference": {
+        "ms_per_batch": 283.4407200018177,
+        "ms_per_image": 4.428761250028401,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "cifar10",
+      "model": "classical",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 49,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.332,
+      "parameters": {
+        "trainable": 30886,
+        "total": 30886
+      },
+      "train_time_s": 8.6655471999984,
+      "inference": {
+        "ms_per_batch": 16.829679999500513,
+        "ms_per_image": 0.2629637499921955,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "cifar10",
+      "model": "randconv",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 49,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.325,
+      "parameters": {
+        "trainable": 30730,
+        "total": 30886
+      },
+      "train_time_s": 2.8858939000056125,
+      "inference": {
+        "ms_per_batch": 16.388600002392195,
+        "ms_per_image": 0.25607187503737805,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "cifar10",
+      "model": "quanv",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 49,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.28,
+      "parameters": {
+        "trainable": 30730,
+        "total": 30730
+      },
+      "train_time_s": 25.56412330000603,
+      "inference": {
+        "ms_per_batch": 248.78767999471165,
+        "ms_per_image": 3.8873074999173696,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "cifar10",
+      "model": "qpf",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 49,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.325,
+      "parameters": {
+        "trainable": 30730,
+        "total": 30730
+      },
+      "train_time_s": 19.086261799995555,
+      "inference": {
+        "ms_per_batch": 200.63950000330806,
+        "ms_per_image": 3.1349921875516884,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "cifar10",
+      "model": "pqc",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 49,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.289,
+      "parameters": {
+        "trainable": 30746,
+        "total": 30746
+      },
+      "train_time_s": 110.64370489999419,
+      "inference": {
+        "ms_per_batch": 467.24019999965094,
+        "ms_per_image": 7.300628124994546,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "svhn",
+      "model": "classical",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 49,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.171,
+      "parameters": {
+        "trainable": 30886,
+        "total": 30886
+      },
+      "train_time_s": 5.133289999997942,
+      "inference": {
+        "ms_per_batch": 19.098499999381602,
+        "ms_per_image": 0.29841406249033753,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "svhn",
+      "model": "randconv",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 49,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.17,
+      "parameters": {
+        "trainable": 30730,
+        "total": 30886
+      },
+      "train_time_s": 2.132731599995168,
+      "inference": {
+        "ms_per_batch": 19.38863999384921,
+        "ms_per_image": 0.3029474999038939,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "svhn",
+      "model": "quanv",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 49,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.176,
+      "parameters": {
+        "trainable": 30730,
+        "total": 30730
+      },
+      "train_time_s": 24.576327100003255,
+      "inference": {
+        "ms_per_batch": 232.5016400020104,
+        "ms_per_image": 3.6328381250314123,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "svhn",
+      "model": "qpf",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 49,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.219,
+      "parameters": {
+        "trainable": 30730,
+        "total": 30730
+      },
+      "train_time_s": 19.183637800000724,
+      "inference": {
+        "ms_per_batch": 184.96953999856487,
+        "ms_per_image": 2.890149062477576,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "svhn",
+      "model": "pqc",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 49,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.203,
+      "parameters": {
+        "trainable": 30746,
+        "total": 30746
+      },
+      "train_time_s": 106.49800739999046,
+      "inference": {
+        "ms_per_batch": 499.53681999468245,
+        "ms_per_image": 7.805262812416913,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "classical",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 50,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.826,
+      "parameters": {
+        "trainable": 7870,
+        "total": 7870
+      },
+      "train_time_s": 4.097258399997372,
+      "inference": {
+        "ms_per_batch": 0.6946999987121671,
+        "ms_per_image": 0.010854687479877612,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "randconv",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 50,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.797,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7870
+      },
+      "train_time_s": 0.9197354999923846,
+      "inference": {
+        "ms_per_batch": 0.5503599997609854,
+        "ms_per_image": 0.008599374996265396,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "quanv",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 50,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.84,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 6.8141774000105215,
+      "inference": {
+        "ms_per_batch": 59.12442000117153,
+        "ms_per_image": 0.9238190625183051,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "qpf",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 50,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.827,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 5.602469500008738,
+      "inference": {
+        "ms_per_batch": 65.40037999802735,
+        "ms_per_image": 1.0218809374691773,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "pqc",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 50,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.652,
+      "parameters": {
+        "trainable": 7866,
+        "total": 7866
+      },
+      "train_time_s": 29.642584500004887,
+      "inference": {
+        "ms_per_batch": 111.32235999684781,
+        "ms_per_image": 1.739411874950747,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "classical",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 50,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.732,
+      "parameters": {
+        "trainable": 7870,
+        "total": 7870
+      },
+      "train_time_s": 3.7187702000082936,
+      "inference": {
+        "ms_per_batch": 0.36759999638888985,
+        "ms_per_image": 0.005743749943576404,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "randconv",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 50,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.721,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7870
+      },
+      "train_time_s": 0.8404826999903889,
+      "inference": {
+        "ms_per_batch": 0.4400199977681041,
+        "ms_per_image": 0.006875312465126626,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "quanv",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 50,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.752,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 5.625711900007445,
+      "inference": {
+        "ms_per_batch": 41.53866000124253,
+        "ms_per_image": 0.6490415625194146,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "qpf",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 50,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.779,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 3.713373299993691,
+      "inference": {
+        "ms_per_batch": 32.45580000220798,
+        "ms_per_image": 0.5071218750344997,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "pqc",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 50,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.666,
+      "parameters": {
+        "trainable": 7866,
+        "total": 7866
+      },
+      "train_time_s": 27.407851500000106,
+      "inference": {
+        "ms_per_batch": 131.12592000397854,
+        "ms_per_image": 2.0488425000621646,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "cifar10",
+      "model": "classical",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 50,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.3,
+      "parameters": {
+        "trainable": 30886,
+        "total": 30886
+      },
+      "train_time_s": 5.547663100005593,
+      "inference": {
+        "ms_per_batch": 4.62975999689661,
+        "ms_per_image": 0.07233999995150953,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "cifar10",
+      "model": "randconv",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 50,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.24,
+      "parameters": {
+        "trainable": 30730,
+        "total": 30886
+      },
+      "train_time_s": 2.6289403999981005,
+      "inference": {
+        "ms_per_batch": 23.61226000066381,
+        "ms_per_image": 0.368941562510372,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "cifar10",
+      "model": "quanv",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 50,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.327,
+      "parameters": {
+        "trainable": 30730,
+        "total": 30730
+      },
+      "train_time_s": 22.179112800004077,
+      "inference": {
+        "ms_per_batch": 231.93106000253465,
+        "ms_per_image": 3.623922812539604,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "cifar10",
+      "model": "qpf",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 50,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.314,
+      "parameters": {
+        "trainable": 30730,
+        "total": 30730
+      },
+      "train_time_s": 19.74651040000026,
+      "inference": {
+        "ms_per_batch": 169.87805999815464,
+        "ms_per_image": 2.6543446874711663,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "cifar10",
+      "model": "pqc",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 50,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.317,
+      "parameters": {
+        "trainable": 30746,
+        "total": 30746
+      },
+      "train_time_s": 110.68388910000795,
+      "inference": {
+        "ms_per_batch": 458.17642000038177,
+        "ms_per_image": 7.159006562505965,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "svhn",
+      "model": "classical",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 50,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.182,
+      "parameters": {
+        "trainable": 30886,
+        "total": 30886
+      },
+      "train_time_s": 5.7244338000018615,
+      "inference": {
+        "ms_per_batch": 23.66448000248056,
+        "ms_per_image": 0.36975750003875874,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "svhn",
+      "model": "randconv",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 50,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.197,
+      "parameters": {
+        "trainable": 30730,
+        "total": 30886
+      },
+      "train_time_s": 2.3013790999975754,
+      "inference": {
+        "ms_per_batch": 24.128420001943596,
+        "ms_per_image": 0.3770065625303687,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "svhn",
+      "model": "quanv",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 50,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.188,
+      "parameters": {
+        "trainable": 30730,
+        "total": 30730
+      },
+      "train_time_s": 23.622977599996375,
+      "inference": {
+        "ms_per_batch": 243.15816000162158,
+        "ms_per_image": 3.799346250025337,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "svhn",
+      "model": "qpf",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 50,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.225,
+      "parameters": {
+        "trainable": 30730,
+        "total": 30730
+      },
+      "train_time_s": 18.716165100006037,
+      "inference": {
+        "ms_per_batch": 255.5707599996822,
+        "ms_per_image": 3.9932931249950343,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "svhn",
+      "model": "pqc",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 50,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.187,
+      "parameters": {
+        "trainable": 30746,
+        "total": 30746
+      },
+      "train_time_s": 107.7478456000099,
+      "inference": {
+        "ms_per_batch": 490.96495999838226,
+        "ms_per_image": 7.671327499974723,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "classical",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 51,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.817,
+      "parameters": {
+        "trainable": 7870,
+        "total": 7870
+      },
+      "train_time_s": 4.425025800010189,
+      "inference": {
+        "ms_per_batch": 0.5104600015329197,
+        "ms_per_image": 0.00797593752395187,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "randconv",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 51,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.786,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7870
+      },
+      "train_time_s": 0.8444845000049099,
+      "inference": {
+        "ms_per_batch": 0.645400004577823,
+        "ms_per_image": 0.010084375071528484,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "quanv",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 51,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.812,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 6.915753699999186,
+      "inference": {
+        "ms_per_batch": 65.61957999947481,
+        "ms_per_image": 1.0253059374917939,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "qpf",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 51,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.797,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 7.302159499988193,
+      "inference": {
+        "ms_per_batch": 47.33581999898888,
+        "ms_per_image": 0.7396221874842013,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "mnist",
+      "model": "pqc",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 51,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.784,
+      "parameters": {
+        "trainable": 7866,
+        "total": 7866
+      },
+      "train_time_s": 28.391232399997534,
+      "inference": {
+        "ms_per_batch": 131.9727799971588,
+        "ms_per_image": 2.062074687455606,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "classical",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 51,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.728,
+      "parameters": {
+        "trainable": 7870,
+        "total": 7870
+      },
+      "train_time_s": 4.503570900007617,
+      "inference": {
+        "ms_per_batch": 15.62110000231769,
+        "ms_per_image": 0.2440796875362139,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "randconv",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 51,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.695,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7870
+      },
+      "train_time_s": 1.0120243999990635,
+      "inference": {
+        "ms_per_batch": 0.6145799998193979,
+        "ms_per_image": 0.009602812497178093,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "quanv",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 51,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.72,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 6.608347100001993,
+      "inference": {
+        "ms_per_batch": 58.93829999840818,
+        "ms_per_image": 0.9209109374751279,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "qpf",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 51,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.779,
+      "parameters": {
+        "trainable": 7850,
+        "total": 7850
+      },
+      "train_time_s": 6.0483926000015344,
+      "inference": {
+        "ms_per_batch": 52.49712000077125,
+        "ms_per_image": 0.8202675000120507,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "fashionmnist",
+      "model": "pqc",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 51,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.726,
+      "parameters": {
+        "trainable": 7866,
+        "total": 7866
+      },
+      "train_time_s": 30.027159699995536,
+      "inference": {
+        "ms_per_batch": 120.4456600069534,
+        "ms_per_image": 1.881963437608647,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "cifar10",
+      "model": "classical",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 51,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.339,
+      "parameters": {
+        "trainable": 30886,
+        "total": 30886
+      },
+      "train_time_s": 6.086377500003437,
+      "inference": {
+        "ms_per_batch": 28.590099996654317,
+        "ms_per_image": 0.4467203124477237,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "cifar10",
+      "model": "randconv",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 51,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.291,
+      "parameters": {
+        "trainable": 30730,
+        "total": 30886
+      },
+      "train_time_s": 2.6833058999909554,
+      "inference": {
+        "ms_per_batch": 24.451959997531958,
+        "ms_per_image": 0.38206187496143684,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "cifar10",
+      "model": "quanv",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 51,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.343,
+      "parameters": {
+        "trainable": 30730,
+        "total": 30730
+      },
+      "train_time_s": 23.755683299998054,
+      "inference": {
+        "ms_per_batch": 266.8479000014486,
+        "ms_per_image": 4.169498437522634,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "cifar10",
+      "model": "qpf",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 51,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.331,
+      "parameters": {
+        "trainable": 30730,
+        "total": 30730
+      },
+      "train_time_s": 19.327037900002324,
+      "inference": {
+        "ms_per_batch": 254.15759999596048,
+        "ms_per_image": 3.9712124999368825,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "cifar10",
+      "model": "pqc",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 51,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.325,
+      "parameters": {
+        "trainable": 30746,
+        "total": 30746
+      },
+      "train_time_s": 108.40647410000383,
+      "inference": {
+        "ms_per_batch": 453.47056000027806,
+        "ms_per_image": 7.085477500004345,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "svhn",
+      "model": "classical",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 51,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.206,
+      "parameters": {
+        "trainable": 30886,
+        "total": 30886
+      },
+      "train_time_s": 5.079257000004873,
+      "inference": {
+        "ms_per_batch": 17.54928000154905,
+        "ms_per_image": 0.2742075000242039,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "svhn",
+      "model": "randconv",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 51,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.207,
+      "parameters": {
+        "trainable": 30730,
+        "total": 30886
+      },
+      "train_time_s": 2.482209800000419,
+      "inference": {
+        "ms_per_batch": 17.66703999892343,
+        "ms_per_image": 0.27604749998317857,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "svhn",
+      "model": "quanv",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 51,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.194,
+      "parameters": {
+        "trainable": 30730,
+        "total": 30730
+      },
+      "train_time_s": 24.235100199992303,
+      "inference": {
+        "ms_per_batch": 215.3076399990823,
+        "ms_per_image": 3.364181874985661,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "svhn",
+      "model": "qpf",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 51,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.233,
+      "parameters": {
+        "trainable": 30730,
+        "total": 30730
+      },
+      "train_time_s": 19.243797699993593,
+      "inference": {
+        "ms_per_batch": 204.7655600006692,
+        "ms_per_image": 3.1994618750104564,
+        "batch_size": 64
+      }
+    }
+  },
+  {
+    "config": {
+      "dataset": "svhn",
+      "model": "pqc",
+      "epochs": 3,
+      "batch_size": 64,
+      "train_size": 2000,
+      "test_size": 1000,
+      "lr": 0.001,
+      "seed": 51,
+      "device": "cpu"
+    },
+    "metrics": {
+      "test_accuracy": 0.232,
+      "parameters": {
+        "trainable": 30746,
+        "total": 30746
+      },
+      "train_time_s": 108.16563220000535,
+      "inference": {
+        "ms_per_batch": 542.1219800016843,
+        "ms_per_image": 8.470655937526317,
+        "batch_size": 64
+      }
+    }
+  }
+]

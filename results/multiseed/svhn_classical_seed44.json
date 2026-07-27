@@ -1,0 +1,26 @@
+{
+  "config": {
+    "dataset": "svhn",
+    "model": "classical",
+    "epochs": 3,
+    "batch_size": 64,
+    "train_size": 2000,
+    "test_size": 1000,
+    "lr": 0.001,
+    "seed": 44,
+    "device": "cpu"
+  },
+  "metrics": {
+    "test_accuracy": 0.185,
+    "parameters": {
+      "trainable": 30886,
+      "total": 30886
+    },
+    "train_time_s": 5.410230699999374,
+    "inference": {
+      "ms_per_batch": 45.35778000135906,
+      "ms_per_image": 0.7087153125212353,
+      "batch_size": 64
+    }
+  }
+}

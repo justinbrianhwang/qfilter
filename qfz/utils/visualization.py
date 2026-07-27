@@ -41,6 +41,10 @@ def plot_feature_maps(layer, image: torch.Tensor, save_path: str = None):
 def plot_benchmark_summary(summary_path: str, save_path: str = None):
     """Bar chart of test accuracy per (dataset, model) from a summary JSON.
 
+    Runs sharing a (dataset, model) key — e.g. the same configuration
+    trained with several seeds — are aggregated into a mean bar with a
+    standard-deviation error bar.
+
     Args:
         summary_path: Path to ``summary.json`` written by
             ``qfz.benchmarks.run_all``.
@@ -49,19 +53,23 @@ def plot_benchmark_summary(summary_path: str, save_path: str = None):
     Returns:
         The matplotlib figure.
     """
+    from qfz.benchmarks.evaluate import aggregate_records
+
     runs = json.loads(Path(summary_path).read_text())
-    datasets = sorted({r["config"]["dataset"] for r in runs})
-    models = sorted({r["config"]["model"] for r in runs})
+    rows = {(r["dataset"], r["model"]): r for r in aggregate_records(runs)}
+    datasets = sorted({ds for ds, _ in rows})
+    models = sorted({m for _, m in rows})
 
     fig, ax = plt.subplots(figsize=(2 + 2.2 * len(datasets), 4))
     width = 0.8 / len(models)
     for j, model in enumerate(models):
-        accs = []
-        for ds in datasets:
-            match = [r for r in runs if r["config"]["dataset"] == ds and r["config"]["model"] == model]
-            accs.append(match[0]["metrics"]["test_accuracy"] if match else 0.0)
+        means = [rows[(ds, model)]["test_accuracy_mean"] if (ds, model) in rows else 0.0
+                 for ds in datasets]
+        stds = [rows[(ds, model)]["test_accuracy_std"] if (ds, model) in rows else 0.0
+                for ds in datasets]
         positions = [i + j * width for i in range(len(datasets))]
-        ax.bar(positions, accs, width=width, label=model)
+        ax.bar(positions, means, width=width, label=model,
+               yerr=stds if any(stds) else None, capsize=3)
     ax.set_xticks([i + 0.4 - width / 2 for i in range(len(datasets))])
     ax.set_xticklabels(datasets)
     ax.set_ylabel("test accuracy")

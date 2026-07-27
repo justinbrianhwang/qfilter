@@ -1,0 +1,26 @@
+{
+  "config": {
+    "dataset": "cifar10",
+    "model": "classical",
+    "epochs": 3,
+    "batch_size": 64,
+    "train_size": 2000,
+    "test_size": 1000,
+    "lr": 0.001,
+    "seed": 47,
+    "device": "cpu"
+  },
+  "metrics": {
+    "test_accuracy": 0.33,
+    "parameters": {
+      "trainable": 30886,
+      "total": 30886
+    },
+    "train_time_s": 1.5684367999929236,
+    "inference": {
+      "ms_per_batch": 0.6179399992106482,
+      "ms_per_image": 0.009655312487666379,
+      "batch_size": 64
+    }
+  }
+}

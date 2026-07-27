@@ -6,7 +6,9 @@ Usage::
         --epochs 3 --train-size 2000 --test-size 1000 --out results
 
 Models:
-    classical  Conv2d baseline, architecture-matched to the hybrids.
+    classical  Trainable Conv2d baseline, architecture-matched to the hybrids.
+    randconv   Frozen random Conv2d + Tanh: the classical control for the
+               fixed quantum filters (random fixed nonlinear features).
     quanv      Fixed random quanvolution filter + linear head.
     qpf        Fixed quantum preprocessing filter + linear head.
     pqc        Trainable parameterized quantum convolution + linear head.
@@ -31,10 +33,10 @@ from qfz.layers import PQCConv2D, QPF, Quanvolution2D
 from qfz.models import ClassicalCNN, HybridCNN
 from qfz.utils import set_seed
 
-MODELS = ("classical", "quanv", "qpf", "pqc")
+MODELS = ("classical", "randconv", "quanv", "qpf", "pqc")
 
 
-def build_model(name: str, info, seed: int = 42) -> nn.Module:
+def build_model(name: str, info, seed: int = 42, layer_kwargs: dict = None) -> nn.Module:
     """Build a benchmark model configured for a dataset.
 
     For multi-channel inputs the quantum filters run in per-channel mode
@@ -45,6 +47,9 @@ def build_model(name: str, info, seed: int = 42) -> nn.Module:
         name: One of :data:`MODELS`.
         info: ``DatasetInfo`` describing the dataset.
         seed: Seed for quantum circuit structure / initial angles.
+        layer_kwargs: Extra keyword arguments forwarded to the filter layer
+            (quantum models) — overrides the defaults above, e.g.
+            ``{"encoding": "basis"}`` or ``{"per_channel": False}``.
 
     Returns:
         A model mapping images to class logits.
@@ -52,15 +57,28 @@ def build_model(name: str, info, seed: int = 42) -> nn.Module:
     channels, classes, size = info.in_channels, info.num_classes, info.img_size
     out_channels = 4 * channels
     per_channel = channels > 1
+    overrides = dict(layer_kwargs or {})
 
-    if name == "classical":
-        return ClassicalCNN(channels, classes, size, out_channels=out_channels)
+    if name in ("classical", "randconv"):
+        model = ClassicalCNN(channels, classes, size, out_channels=out_channels)
+        if name == "randconv":
+            # Freeze the conv: a fixed random feature extractor, the
+            # classical control for the fixed quantum filters.
+            for p in model.features.parameters():
+                p.requires_grad_(False)
+        return model
     if name == "quanv":
-        layer = Quanvolution2D(channels, out_channels, per_channel=per_channel, seed=seed)
+        kwargs = dict(per_channel=per_channel, seed=seed)
+        kwargs.update(overrides)
+        layer = Quanvolution2D(channels, out_channels, **kwargs)
     elif name == "qpf":
-        layer = QPF(channels, entanglement="ring")
+        kwargs = dict(entanglement="ring")
+        kwargs.update(overrides)
+        layer = QPF(channels, **kwargs)
     elif name == "pqc":
-        layer = PQCConv2D(channels, out_channels, per_channel=per_channel, seed=seed)
+        kwargs = dict(per_channel=per_channel, seed=seed)
+        kwargs.update(overrides)
+        layer = PQCConv2D(channels, out_channels, **kwargs)
     else:
         raise ValueError(f"Unknown model '{name}'. Available: {MODELS}")
     return HybridCNN(layer, classes, channels, size)
@@ -70,18 +88,28 @@ def run_experiment(dataset: str, model_name: str, epochs: int = 3,
                    batch_size: int = 64, train_size: int = 2000,
                    test_size: int = 1000, lr: float = 1e-3, seed: int = 42,
                    root: str = None, device: str = "cpu",
-                   out_dir: str = None, progress: bool = True) -> dict:
+                   out_dir: str = None, progress: bool = True,
+                   layer_kwargs: dict = None, variant: str = None,
+                   run_name: str = None) -> dict:
     """Train one (dataset, model) pair and return its benchmark record.
+
+    Args:
+        layer_kwargs: Extra filter-layer arguments (see :func:`build_model`);
+            recorded in the result config.
+        variant: Optional label distinguishing this configuration from the
+            plain model (e.g. ``"qpf-diagonal"``); used as the grouping key
+            when aggregating results across seeds.
+        run_name: Result file stem. Defaults to ``<dataset>_<model>``.
 
     Returns:
         Dict with ``config`` and ``metrics`` keys; also written to
-        ``<out_dir>/<dataset>_<model>.json`` when ``out_dir`` is given.
+        ``<out_dir>/<run_name>.json`` when ``out_dir`` is given.
     """
     set_seed(seed)
     train_loader, test_loader, info = get_dataloaders(
         dataset, root=root, batch_size=batch_size,
         train_size=train_size, test_size=test_size, seed=seed)
-    model = build_model(model_name, info, seed=seed).to(device)
+    model = build_model(model_name, info, seed=seed, layer_kwargs=layer_kwargs).to(device)
 
     optimizer = torch.optim.Adam(
         (p for p in model.parameters() if p.requires_grad), lr=lr)
@@ -101,12 +129,17 @@ def run_experiment(dataset: str, model_name: str, epochs: int = 3,
             iterator.set_postfix(loss=f"{loss.item():.3f}")
     train_time = time.perf_counter() - train_start
 
+    config = {
+        "dataset": dataset, "model": model_name, "epochs": epochs,
+        "batch_size": batch_size, "train_size": train_size,
+        "test_size": test_size, "lr": lr, "seed": seed, "device": device,
+    }
+    if layer_kwargs:
+        config["layer_kwargs"] = layer_kwargs
+    if variant:
+        config["variant"] = variant
     record = {
-        "config": {
-            "dataset": dataset, "model": model_name, "epochs": epochs,
-            "batch_size": batch_size, "train_size": train_size,
-            "test_size": test_size, "lr": lr, "seed": seed, "device": device,
-        },
+        "config": config,
         "metrics": {
             "test_accuracy": evaluate_accuracy(model, test_loader, device),
             "parameters": count_parameters(model),
@@ -118,8 +151,8 @@ def run_experiment(dataset: str, model_name: str, epochs: int = 3,
     if out_dir is not None:
         out_path = Path(out_dir)
         out_path.mkdir(parents=True, exist_ok=True)
-        (out_path / f"{dataset}_{model_name}.json").write_text(
-            json.dumps(record, indent=2))
+        stem = run_name if run_name is not None else f"{dataset}_{model_name}"
+        (out_path / f"{stem}.json").write_text(json.dumps(record, indent=2))
     return record
 
 

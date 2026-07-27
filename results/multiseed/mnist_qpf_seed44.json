@@ -1,0 +1,26 @@
+{
+  "config": {
+    "dataset": "mnist",
+    "model": "qpf",
+    "epochs": 3,
+    "batch_size": 64,
+    "train_size": 2000,
+    "test_size": 1000,
+    "lr": 0.001,
+    "seed": 44,
+    "device": "cpu"
+  },
+  "metrics": {
+    "test_accuracy": 0.817,
+    "parameters": {
+      "trainable": 7850,
+      "total": 7850
+    },
+    "train_time_s": 10.506239900001674,
+    "inference": {
+      "ms_per_batch": 226.4558200025931,
+      "ms_per_image": 3.538372187540517,
+      "batch_size": 64
+    }
+  }
+}

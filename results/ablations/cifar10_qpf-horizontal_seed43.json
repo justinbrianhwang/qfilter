@@ -1,0 +1,30 @@
+{
+  "config": {
+    "dataset": "cifar10",
+    "model": "qpf",
+    "epochs": 3,
+    "batch_size": 64,
+    "train_size": 2000,
+    "test_size": 1000,
+    "lr": 0.001,
+    "seed": 43,
+    "device": "cpu",
+    "layer_kwargs": {
+      "entanglement": "horizontal"
+    },
+    "variant": "qpf-horizontal"
+  },
+  "metrics": {
+    "test_accuracy": 0.329,
+    "parameters": {
+      "trainable": 30730,
+      "total": 30730
+    },
+    "train_time_s": 17.51991430000635,
+    "inference": {
+      "ms_per_batch": 168.36596000066493,
+      "ms_per_image": 2.6307181250103895,
+      "batch_size": 64
+    }
+  }
+}

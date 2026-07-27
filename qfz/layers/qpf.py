@@ -6,6 +6,10 @@ pattern, then Pauli-Z measurement of all four qubits. Because it has no
 trainable parameters, it acts as a deterministic feature transform that
 can be applied once as preprocessing.
 
+Follows the quantum pre-processing filter of Riaz et al. (2023),
+arXiv:2308.11112 / arXiv:2308.14930, generalized here to selectable
+CNOT entanglement patterns and arbitrary channel counts.
+
 Qubit layout within a 2x2 patch::
 
     q0 q1

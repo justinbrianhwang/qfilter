@@ -1,0 +1,26 @@
+{
+  "config": {
+    "dataset": "svhn",
+    "model": "pqc",
+    "epochs": 3,
+    "batch_size": 64,
+    "train_size": 2000,
+    "test_size": 1000,
+    "lr": 0.001,
+    "seed": 51,
+    "device": "cpu"
+  },
+  "metrics": {
+    "test_accuracy": 0.232,
+    "parameters": {
+      "trainable": 30746,
+      "total": 30746
+    },
+    "train_time_s": 108.16563220000535,
+    "inference": {
+      "ms_per_batch": 542.1219800016843,
+      "ms_per_image": 8.470655937526317,
+      "batch_size": 64
+    }
+  }
+}

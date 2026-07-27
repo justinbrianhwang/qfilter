@@ -1,0 +1,30 @@
+{
+  "config": {
+    "dataset": "cifar10",
+    "model": "quanv",
+    "epochs": 3,
+    "batch_size": 64,
+    "train_size": 2000,
+    "test_size": 1000,
+    "lr": 0.001,
+    "seed": 45,
+    "device": "cpu",
+    "layer_kwargs": {
+      "circuit": "iqp"
+    },
+    "variant": "quanv-iqp"
+  },
+  "metrics": {
+    "test_accuracy": 0.153,
+    "parameters": {
+      "trainable": 30730,
+      "total": 30730
+    },
+    "train_time_s": 20.935358300004737,
+    "inference": {
+      "ms_per_batch": 211.4598800020758,
+      "ms_per_image": 3.3040606250324345,
+      "batch_size": 64
+    }
+  }
+}

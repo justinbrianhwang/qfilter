@@ -1,0 +1,26 @@
+{
+  "config": {
+    "dataset": "mnist",
+    "model": "pqc",
+    "epochs": 3,
+    "batch_size": 64,
+    "train_size": 2000,
+    "test_size": 1000,
+    "lr": 0.001,
+    "seed": 51,
+    "device": "cpu"
+  },
+  "metrics": {
+    "test_accuracy": 0.784,
+    "parameters": {
+      "trainable": 7866,
+      "total": 7866
+    },
+    "train_time_s": 28.391232399997534,
+    "inference": {
+      "ms_per_batch": 131.9727799971588,
+      "ms_per_image": 2.062074687455606,
+      "batch_size": 64
+    }
+  }
+}

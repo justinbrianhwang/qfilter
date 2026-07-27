@@ -19,3 +19,7 @@ venv/
 .idea/
 Thumbs.db
 .DS_Store
+
+# For Paper
+Paper/
+DeepResearch/

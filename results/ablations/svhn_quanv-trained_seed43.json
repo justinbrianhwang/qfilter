@@ -1,0 +1,30 @@
+{
+  "config": {
+    "dataset": "svhn",
+    "model": "quanv",
+    "epochs": 3,
+    "batch_size": 64,
+    "train_size": 2000,
+    "test_size": 1000,
+    "lr": 0.001,
+    "seed": 43,
+    "device": "cpu",
+    "layer_kwargs": {
+      "trainable": true
+    },
+    "variant": "quanv-trained"
+  },
+  "metrics": {
+    "test_accuracy": 0.23,
+    "parameters": {
+      "trainable": 30734,
+      "total": 30734
+    },
+    "train_time_s": 28.776424399999087,
+    "inference": {
+      "ms_per_batch": 158.52629999862984,
+      "ms_per_image": 2.4769734374785912,
+      "batch_size": 64
+    }
+  }
+}

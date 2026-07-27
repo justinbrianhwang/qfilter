@@ -1,0 +1,30 @@
+{
+  "config": {
+    "dataset": "fashionmnist",
+    "model": "quanv",
+    "epochs": 3,
+    "batch_size": 64,
+    "train_size": 2000,
+    "test_size": 1000,
+    "lr": 0.001,
+    "seed": 46,
+    "device": "cpu",
+    "layer_kwargs": {
+      "encoding": "basis"
+    },
+    "variant": "quanv-basis"
+  },
+  "metrics": {
+    "test_accuracy": 0.722,
+    "parameters": {
+      "trainable": 7850,
+      "total": 7850
+    },
+    "train_time_s": 7.9348369000072125,
+    "inference": {
+      "ms_per_batch": 64.90765999769792,
+      "ms_per_image": 1.01418218746403,
+      "batch_size": 64
+    }
+  }
+}
